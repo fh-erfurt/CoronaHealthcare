@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS `CoronaHealthcare`.`profil` (
   `lastname` VARCHAR(45) NULL,
   `phone` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
-  `adress` INT NOT NULL,
+  `address` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_profil_adress_idx` (`adress` ASC),
-  CONSTRAINT `fk_profil_adress`
-    FOREIGN KEY (`adress`)
+  INDEX `fk_profil_address_idx` (`address` ASC),
+  CONSTRAINT `fk_profil_address`
+    FOREIGN KEY (`address`)
     REFERENCES `CoronaHealthcare`.`address` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);

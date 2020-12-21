@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles/style.css">
 </head>
-
-<body>
-    <header>
+<header>
         <h1 style="background-color:grey;">Willkommen bei Corona Healthcare</h1>
         <nav>
             <a href="index.php?page=home">Schutzmasken</a>
@@ -19,6 +17,7 @@
             <a href="index.php?page=kontakt">Hautreinigung</a>
         </nav>
     </header>
+<body>
     <section class="content">
         <aside class="left">
             <article class="info">

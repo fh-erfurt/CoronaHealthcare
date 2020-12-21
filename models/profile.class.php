@@ -1,0 +1,16 @@
+<?php
+namespace app\models;
+
+class Profile extends BaseModel
+{
+    const TABLENAME = '`profil`';
+    protected $schema = [
+        'id'         => [ 'type' => BaseModel::TYPE_INT],
+        'createdAt'  => [ 'type' => BaseModel::TYPE_STRING],
+        'firstname'  => [ 'type' => BaseModel::TYPE_STRING, 'min' => 2, 'max' => 45],
+        'lastname'   => [ 'type' => BaseModel::TYPE_STRING, 'min' => 2, 'max' => 45],
+        'phone'      => [ 'type' => BaseModel::TYPE_STRING],
+        'email'      => [ 'type' => BaseModel::TYPE_STRING],
+        'address'    => [ 'type' => BaseModel::TYPE_INT],
+    ];
+}

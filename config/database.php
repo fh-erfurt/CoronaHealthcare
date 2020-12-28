@@ -2,7 +2,7 @@
 
 $dbName = 'CoronaHealthcare';
 
-$dns = 'mysql:dbname='.$dbName.'host=localhost';
+$dns = 'mysql:dbname='.$dbName.';host=localhost';
 $user = 'root';
 $pw = '';
 $options = [

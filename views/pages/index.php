@@ -10,7 +10,8 @@
     <?php
         echo $myValue;
     ?>
+    
 
-    Hier sollte irgendwas aufploppen wenn man Index anzeigen will..
+   
 </body>
 </html>

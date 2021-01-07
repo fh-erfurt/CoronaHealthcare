@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<title>CoronaHealthcare</title>
-		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
 		<?php if(isset($css) && is_array($css)) : ?>
 			<?php foreach($css as $index => $file) : ?>
 			<link rel="stylesheet" type="text/css" href="assets/css/<?=$file?>.css">
@@ -9,15 +10,23 @@
 		<?php endif; ?>
 	</head>
 	<header>
-        <h1 style="background-color:grey;">Willkommen bei Corona Healthcare</h1>
-        <nav>
-            <a href="index.php?a=index">Startseite</a> |
-			<a href="index.php?a=shop">Shop</a> |
-			<a href="index.php?a=kontakt">Kontakt</a> |
-			<a href="index.php?a=profile">Mein Profil</a> |
-			<a href="index.php?a=about">Über uns</a>
-        </nav>
+        
+        <div class="logo"><img src="../assets/Logo.png" width="300" height="300" alt="Logo"></div>
+        <h1>Willkommen bei CoronaHealthcare</h1>
+        <div class="topbar"><a href="pages/hilfe.php">Hilfe</a>
+        <a href="index.php?page=about">Über uns</a></div>
+        <div class="symbol"><i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"> </i>
+            <!--<i class="glyphicon glyphicon-search"></i></div>--></div>
     </header>
+
+    <nav>
+        <a href="index.php?page=Schutzmasken">Schutzmasken</a>
+        <a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
+        <a href="index.php?page=Hygienepapier">Hygienepapier</a>
+        <a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
+        <a href="index.php?page=Hautreinigung">Hautreinigung</a>
+    </nav>
 	<body>
 		<div class="content-wrap">
 			<main>
@@ -25,7 +34,7 @@
 			</main>
 		</div>
 		<footer>
-			&copy; Team CoronaHealthcare || <a href="index.php?a=impressum">Impressum</a>
+			&copy; Team CoronaHealthcare || <a href="pages/impressum.php">Impressum</a>
 		</footer>
 	</body>
 </html>

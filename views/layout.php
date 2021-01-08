@@ -11,10 +11,10 @@
 	</head>
 	<header>
         
-        <div class="logo"><img src="../assets/Logo.png" width="300" height="300" alt="Logo"></div>
+        <div class="logo"><img src="assets/Logo.png" width="300" height="300" alt="Logo"></div>
         <h1>Willkommen bei CoronaHealthcare</h1>
-        <div class="topbar"><a href="pages/hilfe.php">Hilfe</a>
-        <a href="index.php?page=about">Über uns</a></div>
+        <div class="topbar"><a href="index.php?a=hilfe">Hilfe</a>
+        <a href="index.php?a=about">Über uns</a></div>
         <div class="symbol"><i class="fa fa-user"></i>
             <i class="fa fa-shopping-cart"> </i>
             <!--<i class="glyphicon glyphicon-search"></i></div>--></div>
@@ -26,6 +26,10 @@
         <a href="index.php?page=Hygienepapier">Hygienepapier</a>
         <a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
         <a href="index.php?page=Hautreinigung">Hautreinigung</a>
+        <a href="index.php?a=profile">Profil</a>
+        <a href="index.php?a=shop">Shop</a>
+		<a href="index.php?a=start">Zur Startseite</a>
+
     </nav>
 	<body>
 		<div class="content-wrap">
@@ -34,7 +38,7 @@
 			</main>
 		</div>
 		<footer>
-			&copy; Team CoronaHealthcare || <a href="pages/impressum.php">Impressum</a>
+			&copy; Team CoronaHealthcare || <a href="index.php?a=impressum">Impressum</a>
 		</footer>
 	</body>
 </html>

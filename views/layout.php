@@ -1,44 +1,59 @@
 <html>
-	<head>
-		<title>CoronaHealthcare</title>
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
-		<?php if(isset($css) && is_array($css)) : ?>
-			<?php foreach($css as $index => $file) : ?>
-			<link rel="stylesheet" type="text/css" href="assets/css/<?=$file?>.css">
-			<?php endforeach; ?>
-		<?php endif; ?>
-	</head>
-	<header>
-        
-        <div class="logo"><img src="assets/Logo.png" width="300" height="300" alt="Logo"></div>
-        <h1>Willkommen bei CoronaHealthcare</h1>
-        <div class="topbar"><a href="index.php?a=hilfe">Hilfe</a>
-        <a href="index.php?a=about">Über uns</a></div>
-        <div class="symbol"><i class="fa fa-user"></i>
-            <i class="fa fa-shopping-cart"> </i>
-            <!--<i class="glyphicon glyphicon-search"></i></div>--></div>
-    </header>
 
-    <nav>
-        <a href="index.php?page=Schutzmasken">Schutzmasken</a>
-        <a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
-        <a href="index.php?page=Hygienepapier">Hygienepapier</a>
-        <a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
-        <a href="index.php?page=Hautreinigung">Hautreinigung</a>
-        <a href="index.php?a=profile">Profil</a>
-        <a href="index.php?a=shop">Shop</a>
-		<a href="index.php?a=start">Zur Startseite</a>
+<head>
+	<title>CoronaHealthcare</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
+	<?php if (isset($css) && is_array($css)) : ?>
+		<?php foreach ($css as $index => $file) : ?>
+			<link rel="stylesheet" type="text/css" href="assets/css/<?= $file ?>.css">
+		<?php endforeach; ?>
+	<?php endif; ?>
+</head>
 
-    </nav>
-	<body>
-		<div class="content-wrap">
-			<main>
-				<?php echo $body ?>
-			</main>
+<header>
+	<div class="logo"><img src="assets/Logo.png" alt="Logo"></div>
+	<a href="index.php?a=start">
+		<h1>Willkommen bei <br>CoronaHealthcare</br></h1>
+	</a>
+
+	<div class="topbar"><a href="index.php?a=profile">Anmelden</a></div>
+	<div class="symbol">
+		<i class="fa fa-search"></i>
+		<a href="index.php?a=profile"><i class="fa fa-user"></i></a>
+		<a href="index.php?a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
+	</div>
+</header>
+
+<nav>
+	<a href="index.php?a=start">Zur Startseite</a>
+	<div class="shop" id="navigation">
+		<div class="dropdown">
+			<button class="dropbtn">Shop
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			<a href="index.php?page=Schutzmasken">Schutzmasken</a>
+			<a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
+			<a href="index.php?page=Hygienepapier">Hygienepapier</a>
+			<a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
+			<a href="index.php?page=Hautreinigung">Hautreinigung</a>
+			</div>
 		</div>
-		<footer>
-			&copy; Team CoronaHealthcare || <a href="index.php?a=impressum">Impressum</a>
-		</footer>
-	</body>
+	</div>
+	<a href="index.php?a=info">Information</a>
+	<a href="index.php?a=about">Über uns</a>
+</nav>
+
+<body>
+	<div class="content-wrap">
+		<main>
+			<?php echo $body ?>
+		</main>
+	</div>
+	<footer>
+		&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a>
+	</footer>
+</body>
+
 </html>

@@ -212,7 +212,7 @@ abstract class BaseModel
 
         try 
         {
-            $sql = 'SELECT * FROM ' . tablename();
+            $sql = 'SELECT * FROM ' . self::tablename();
 
             if(!empty($where))
             {

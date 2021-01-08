@@ -1,7 +1,8 @@
 <?php
 
 namespace app\controller;
-use app\models\Profile as Profile;
+use \app\models;
+
 class PagesController extends \app\core\Controller
 {
 
@@ -14,7 +15,14 @@ class PagesController extends \app\core\Controller
 
 	public function actionProfile()
 	{
-		//$profile = Profile->find('WHERE id = 1');
+
+		//$profileAnlegen = new \app\Models\Profile([]);
+
+		//$tablename = \app\models\Profile::tablename();
+		//echo $tablename;
+		$profile = \app\models\Profile::find('id = 1');
+		$this->_params['profile'] = $profile;
+		
 	}
 
 	public function actionError404()

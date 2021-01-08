@@ -1,8 +1,3 @@
-<?php
-    
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +7,11 @@
     <title>Mein Profil</title>
 </head>
 <body>
-
-    Hier soll mal mein Profil angezeigt werden.
+    <h3>Profilübersicht</h3>
+    <? 
+        print_r($profile)
+    ?>
+    <br />
+    <br>
 </body>
 </html>

@@ -1,9 +1,10 @@
 <?php
 namespace app\models;
+use \app\models\BaseModel;
 
-class Profile extends BaseModel
+class Profile extends \app\models\BaseModel
 {
-    const TABLENAME = '`profil`';
+    const TABLENAME = '`profile`';
     protected $schema = [
         'id'         => [ 'type' => BaseModel::TYPE_INT],
         'createdAt'  => [ 'type' => BaseModel::TYPE_STRING],

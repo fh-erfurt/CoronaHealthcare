@@ -6,19 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
 	<?php if (isset($css) && is_array($css)) : ?>
 		<?php foreach ($css as $index => $file) : ?>
-			<link rel="stylesheet" type="text/css" href="assets/css/<?= $file ?>.css">
+			<link rel="stylesheet" type="text/css" href="assets/styles/<?= $file ?>.css">
 		<?php endforeach; ?>
 	<?php endif; ?>
 </head>
 
 <header>
-	<div class="logo"><img src="assets/Logo.png" alt="Logo"></div>
+	<div class="logo"><a href="index.php?a=start"><img src="assets/Logo.png" alt="Logo"></a></div>
 	<a href="index.php?a=start">
 		<h1>Willkommen bei <br>CoronaHealthcare</br></h1>
 	</a>
 
-	<div class="topbar"><a href="index.php?a=profile">Anmelden</a></div>
+	<div class="anmelden"><a href="index.php?a=profile">Anmelden</a></div>
 	<div class="symbol">
+		<input type="text" placeholder="Suche..">
 		<i class="fa fa-search"></i>
 		<a href="index.php?a=profile"><i class="fa fa-user"></i></a>
 		<a href="index.php?a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
@@ -26,7 +27,6 @@
 </header>
 
 <nav>
-	<a href="index.php?a=start">Zur Startseite</a>
 	<div class="shop" id="navigation">
 		<div class="dropdown">
 			<button class="dropbtn">Shop
@@ -41,8 +41,8 @@
 			</div>
 		</div>
 	</div>
-	<a href="index.php?a=info">Information</a>
-	<a href="index.php?a=about">Über uns</a>
+	<button class="buttonInformation"><a href="index.php?a=info">Information</a></button>
+	<button class="buttonUeberUns"><a href="index.php?a=about">Über uns</a></button>
 </nav>
 
 <body>

@@ -13,14 +13,16 @@
 
 <header>
 	<div class="logo"><a href="index.php?a=start"><img src="assets/Logo.png" alt="Logo"></a></div>
-	<a href="index.php?a=start">
-		<h1>Willkommen bei <br>CoronaHealthcare</br></h1>
-	</a>
+	<div class="center">
+		<a href="index.php?a=start">
+			<h1>CoronaHealthcare</h1>
+		</a>
+		<div class="search"><input type="text" placeholder="Suche..">
+		<button type="submit"><i class="fa fa-search"></i></button></div>
+	</div>
 
-	<div class="anmelden"><a href="index.php?a=profile">Anmelden</a></div>
+	<div class="login"><a href="index.php?a=profile">Anmelden</a></div>
 	<div class="symbol">
-		<input type="text" placeholder="Suche..">
-		<i class="fa fa-search"></i>
 		<a href="index.php?a=profile"><i class="fa fa-user"></i></a>
 		<a href="index.php?a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
 	</div>
@@ -33,18 +35,17 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-			<a href="index.php?page=Schutzmasken">Schutzmasken</a>
-			<a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
-			<a href="index.php?page=Hygienepapier">Hygienepapier</a>
-			<a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
-			<a href="index.php?page=Hautreinigung">Hautreinigung</a>
+				<a href="index.php?page=Schutzmasken">Schutzmasken</a>
+				<a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
+				<a href="index.php?page=Hygienepapier">Hygienepapier</a>
+				<a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
+				<a href="index.php?page=Hautreinigung">Hautreinigung</a>
 			</div>
 		</div>
 	</div>
 	<button class="buttonInformation"><a href="index.php?a=info">Information</a></button>
 	<button class="buttonUeberUns"><a href="index.php?a=about">Über uns</a></button>
 </nav>
-
 <body>
 	<div class="content-wrap">
 		<main>

@@ -21,6 +21,22 @@ header {
     padding: 10px;
 }
 
+article p {
+    font-size: 15px;
+    background-color: white;
+}
+
+.help p,
+.help h3,
+.textStartseite p,
+.geschichte p,
+.impressum {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
 .center {
     flex-grow: 2;
 }
@@ -112,7 +128,6 @@ footer {
     align-items: center;
 }
 
-p,
 br {
     font-size: 30px;
 }

@@ -35,15 +35,15 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-				<a href="index.php?page=Schutzmasken">Schutzmasken</a>
-				<a href="index.php?page=Desinfektionsmittel">Desinfektionsmittel</a>
-				<a href="index.php?page=Hygienepapier">Hygienepapier</a>
-				<a href="index.php?page=Reinigungsmittel">Reinigungsmittel</a>
-				<a href="index.php?page=Hautreinigung">Hautreinigung</a>
+				<a href="index.php?a=Schutzmasken">Schutzmasken</a>
+				<a href="index.php?a=Desinfektionsmittel">Desinfektionsmittel</a>
+				<a href="index.php?a=Hygienepapier">Hygienepapier</a>
+				<a href="index.php?a=Reinigungsmittel">Reinigungsmittel</a>
+				<a href="index.php?a=Hautreinigung">Hautreinigung</a>
 			</div>
 		</div>
 	</div>
-	<button class="buttonInformation"><a href="index.php?a=info">Information</a></button>
+	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
 	<button class="buttonUeberUns"><a href="index.php?a=about">Über uns</a></button>
 </nav>
 <body>

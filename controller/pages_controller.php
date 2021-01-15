@@ -29,7 +29,7 @@ class PagesController extends \app\core\Controller
 	{
 		
 	}
-	public function actionHilfe()
+	public function actionHelp()
 	{
 
 	}
@@ -37,7 +37,18 @@ class PagesController extends \app\core\Controller
 	{
 		
 	}
+
 	public function actionImpressum()
+	{
+
+	}
+
+	public function actionAbout()
+	{
+
+	}
+
+	public function actionInformation()
 	{
 
 	}

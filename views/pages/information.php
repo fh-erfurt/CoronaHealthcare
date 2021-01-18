@@ -1,1 +1,3 @@
-<h1>Informationen</h1>
+<p>
+    Hier werden Informationstexte eingefügt
+</p>

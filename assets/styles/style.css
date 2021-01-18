@@ -37,11 +37,21 @@ h1 {
     font-size: 50px;
 }
 
+
 a,
 footer,
 .login,
 .dropbtn {
     color: rgb(255, 255, 255);
+}
+
+.darklink{
+    color:black;
+}
+
+.space {
+    margin-left:5px; 
+    margin-right:5px;
 }
 
 img {

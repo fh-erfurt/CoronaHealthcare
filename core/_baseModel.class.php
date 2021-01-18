@@ -228,4 +228,16 @@ abstract class BaseModel
 
         return $result;
     }
+
+    public static function findOne($whereStr = '')
+    {
+        $results = self::find($whereStr);
+
+        if(count($results) > 0)
+        {
+            return $results[0];
+        }
+
+        return null;
+    }
 }

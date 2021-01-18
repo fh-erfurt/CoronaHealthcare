@@ -6,23 +6,12 @@ use \app\models;
 class PagesController extends \app\core\Controller
 {
 
-	public function actionIndex()
-	{
-		$myValue = 4 * 4;
-
-		$this->_params['myValue'] = $myValue;
-	}
-
 	public function actionProfile()
 	{
-
-		//$profileAnlegen = new \app\Models\Profile([]);
-
-		//$tablename = \app\models\Profile::tablename();
-		//echo $tablename;
-		$profile = \app\models\Profile::find('id = 1');
-		$this->_params['profile'] = $profile;
-		
+		$this->_params['userFirstname'] = $_SESSION['user']['firstname'];
+		$this->_params['userLastname'] = $_SESSION['user']['lastname'];
+		$this->_params['userEmail'] = $_SESSION['user']['email'];
+		$this->_params['userPhone'] = $_SESSION['user']['password'];		
 	}
 
 	public function actionError404()
@@ -52,4 +41,10 @@ class PagesController extends \app\core\Controller
 	{
 
 	}
+
+	public function actionShop()
+	{
+		
+	}
+	
 }

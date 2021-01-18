@@ -7,9 +7,10 @@
 </head>
 <body>
     <h3>Profilübersicht</h3>
-    <? 
-        print_r($profile)
-    ?>
+    <p>Vorname : <?=$userFirstname?></p>
+    <p>Nachname : <?=$userLastname?></p>
+    <p>Emailadresse : <?=$userEmail?></p>
+    <p>Telefonnummer : <?=$userPhone?></p>
     <br />
     <br>
 </body>

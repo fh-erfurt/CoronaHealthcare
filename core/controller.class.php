@@ -37,9 +37,19 @@ class Controller
 			}
 			$body = ob_get_clean();
 		}
-
 		include __DIR__.'/../views/layout.php';
 		
+	}
+
+	protected function setParam($key, $value = null)
+	{
+		$this->_params[$key] = $value;
+	}
+	
+	public function redirect($url)
+	{
+		header('Location: '.$url);
+        exit(0);
 	}
 
 	protected function viewPath($controllerName, $action)

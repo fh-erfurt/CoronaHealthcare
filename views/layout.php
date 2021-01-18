@@ -21,9 +21,24 @@
 		<button type="submit"><i class="fa fa-search"></i></button></div>
 	</div>
 
-	<div class="login"><a href="index.php?a=profile">Anmelden</a></div>
+
+	<? if(isset($_SESSION['user'])) : ?>
+		<div class="login">Willkommen <?=$_SESSION['user']['firstname'] ?>!</div>
+		<div class="login space">|</div>
+		<div class="login"><a href="index.php?c=login&a=logout">Abmelden</a></div>
+	<? else: ?>
+	<div class="login"><a href="index.php?c=login&a=login">Anmelden</a></div>
+	<div class="login space">|</div>
+	<div class="login"><a href="index.php?c=login&a=register">Registrieren</a></div>
+	<? endif; ?>
+
+
 	<div class="symbol">
-		<a href="index.php?a=profile"><i class="fa fa-user"></i></a>
+	<? if(!isset($_SESSION['user'])) : ?>
+		<a href="index.php?c=login&a=login"><i class="fa fa-user"></i></a>
+	<? else: ?>
+		<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
+	<? endif; ?>
 		<a href="index.php?a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
 	</div>
 </header>
@@ -31,7 +46,7 @@
 <nav>
 	<div class="shop" id="navigation">
 		<div class="dropdown">
-			<button class="dropbtn">Shop
+			<button class="dropbtn"><a href="index.php?a=shop">Shop</a>
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">

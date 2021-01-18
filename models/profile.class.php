@@ -12,6 +12,7 @@ class Profile extends \app\models\BaseModel
         'lastname'   => [ 'type' => BaseModel::TYPE_STRING, 'min' => 2, 'max' => 45],
         'phone'      => [ 'type' => BaseModel::TYPE_STRING],
         'email'      => [ 'type' => BaseModel::TYPE_STRING],
+        'password'   => [ 'type'  => BaseModel::TYPE_STRING, 'min' => 6, 'max' => 45],
         'address'    => [ 'type' => BaseModel::TYPE_INT],
     ];
 }

@@ -9,8 +9,23 @@ require_once 'config/init.php';
 //require_once COREPATH.'functions.php';
 require_once COREPATH.'controller.class.php';
 require_once COREPATH.'_baseModel.class.php';
+require_once COREPATH.'functions.php';
 require_once MODELSPATH.'profile.class.php';
 
+
+// if(isset($_POST['submitLogin']))
+// {
+// 	$error = true;
+// 	$user = logIn($error);
+// 	if(!$error)
+// 	{
+// 		$_SESSION['user'] = $user;
+// 	}
+// 	else {
+// 		$_SESSION['error'] = $error;
+// 		header('Location: index.php?c=login&a=login');
+// 	}
+// }
 
 // query params with 'c' means controller and 'a' means action
 // controller is alwayse the controller of the views
@@ -20,7 +35,15 @@ require_once MODELSPATH.'profile.class.php';
 $controllerName = $_GET['c'] ?? 'pages';
 
 // check action name is given? if not use 'index' as default!
-$actionName = $_GET['a'] ?? 'index';
+$actionName = $_GET['a'] ?? 'start';
+
+
+if($actionName === 'logout')
+{
+	logOut();
+	$actionName = 'start';
+	$controllerName = 'pages';
+}
 
 // generate the correct controller path and check file exists?
 $controllerPath = CONTROLLERSPATH.$controllerName.'_controller.php';
@@ -72,8 +95,7 @@ else
     <title>CoronaHealthcare</title>
 </head>
 <body>
-    <?php
-
+	<?
         // this method will render the view of the called action
         // for this the the file in the views directory will be included
         $controllerInstance->renderHTML();

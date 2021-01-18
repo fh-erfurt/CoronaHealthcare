@@ -6,7 +6,8 @@
     <meta charset=UTF-8>
     <title>CoronaHealthcare</title>
 </head>
-    <body>    
+
+<body>
     <div id="main">
         <article>
 <p>

@@ -21,6 +21,26 @@ header {
     padding: 10px;
 }
 
+article p {
+    font-size: 15px;
+    background-color: white;
+}
+
+.help p,
+.help h3,
+.textStartseite p,
+.impressum {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.textStartseite,
+.geschichte p {
+    padding: 50px;
+}
+
 .center {
     flex-grow: 2;
 }
@@ -52,6 +72,9 @@ footer,
 .space {
     margin-left:5px; 
     margin-right:5px;
+}
+article a {
+    color: black;
 }
 
 img {
@@ -103,7 +126,7 @@ nav {
 .buttonInformation:hover,
 .buttonUeberUns:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background: rgb(45, 58, 58);
+    background: rgb(44, 47, 51);
 }
 
 aside {
@@ -122,7 +145,6 @@ footer {
     align-items: center;
 }
 
-p,
 br {
     font-size: 30px;
 }
@@ -150,7 +172,7 @@ br {
     display: block;
     text-align: left;
     padding: 12px 16px;
-    background: rgb(45, 58, 58);
+    background: rgb(44, 47, 51);
 }
 
 .dropdown-content a:hover {

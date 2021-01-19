@@ -10,22 +10,13 @@ require_once 'config/init.php';
 require_once COREPATH.'controller.class.php';
 require_once COREPATH.'_baseModel.class.php';
 require_once COREPATH.'functions.php';
+require_once MODELSPATH.'address.class.php';
+require_once MODELSPATH.'category.class.php';
+require_once MODELSPATH.'order.class.php';
+require_once MODELSPATH.'orderHistory.class.php';
+require_once MODELSPATH.'product.class.php';
 require_once MODELSPATH.'profile.class.php';
 
-
-// if(isset($_POST['submitLogin']))
-// {
-// 	$error = true;
-// 	$user = logIn($error);
-// 	if(!$error)
-// 	{
-// 		$_SESSION['user'] = $user;
-// 	}
-// 	else {
-// 		$_SESSION['error'] = $error;
-// 		header('Location: index.php?c=login&a=login');
-// 	}
-// }
 
 // query params with 'c' means controller and 'a' means action
 // controller is alwayse the controller of the views

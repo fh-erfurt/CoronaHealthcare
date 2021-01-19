@@ -11,7 +11,7 @@ class PagesController extends \app\core\Controller
 		$this->_params['userFirstname'] = $_SESSION['user']['firstname'];
 		$this->_params['userLastname'] = $_SESSION['user']['lastname'];
 		$this->_params['userEmail'] = $_SESSION['user']['email'];
-		$this->_params['userPhone'] = $_SESSION['user']['password'];		
+		$this->_params['userPhone'] = $_SESSION['user']['phone'];		
 	}
 
 	public function actionError404()
@@ -40,11 +40,6 @@ class PagesController extends \app\core\Controller
 	public function actionInformation()
 	{
 
-	}
-
-	public function actionShop()
-	{
-		
 	}
 	
 }

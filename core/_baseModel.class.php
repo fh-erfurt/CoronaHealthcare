@@ -56,7 +56,7 @@ abstract class BaseModel
         }
     }
 
-    protected function insert(&$errors)
+    public function insert(&$errors)
     {
         $db = $GLOBALS['db'];
 

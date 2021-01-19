@@ -1,7 +1,8 @@
 <?php
+namespace app\models;
+use \app\models\BaseModel;
 
-
-class Category extends BaseModel
+class Category extends \app\models\BaseModel
 {
     const TABLENAME = '`category`';
     protected $schema = [

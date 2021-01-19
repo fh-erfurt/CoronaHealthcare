@@ -46,7 +46,7 @@
 <nav>
 	<div class="shop" id="navigation">
 		<div class="dropdown">
-			<button class="dropbtn"><a href="index.php?a=shop">Shop</a>
+			<button class="dropbtn" ><a href="index.php?c=shop&a=shop">Shop</a>
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
@@ -61,6 +61,8 @@
 	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
 	<button class="buttonUeberUns"><a href="index.php?a=about">Über uns</a></button>
 </nav>
+
+
 <body>
 	<div class="content-wrap">
 		<main>

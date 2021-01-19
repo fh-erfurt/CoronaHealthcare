@@ -1,7 +1,8 @@
 <?php
+namespace app\models;
+use \app\models\BaseModel;
 
-
-class Product extends BaseModel
+class Product extends \app\models\BaseModel
 {
     const TABLENAME = '`product`';
     protected $schema = [

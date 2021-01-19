@@ -1,6 +1,8 @@
 <?php
+namespace app\models;
+use \app\models\BaseModel;
 
-class Address extends BaseModel
+class Address extends \app\models\BaseModel
 {
     const TABLENAME = '`address`';
     protected $schema = [

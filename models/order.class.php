@@ -1,6 +1,7 @@
 <?php
-
-class Order extends BaseModel
+namespace app\models;
+use \app\models\BaseModel;
+class Order extends \app\models\BaseModel
 {
     const TABLENAME = '`order`';
     protected $schema = [

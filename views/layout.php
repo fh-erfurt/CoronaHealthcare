@@ -17,7 +17,7 @@
 		<a href="index.php?a=start">
 			<h1>CoronaHealthcare</h1>
 		</a>
-		<div class="search"><input type="text" placeholder="Suche..">
+		<div class="search"><input type="text" name="search" placeholder="Suche..">
 		<button type="submit"><i class="fa fa-search"></i></button></div>
 	</div>
 

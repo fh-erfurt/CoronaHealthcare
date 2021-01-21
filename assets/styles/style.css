@@ -57,7 +57,6 @@ h1 {
     font-size: 50px;
 }
 
-
 a,
 footer,
 .login,
@@ -65,14 +64,15 @@ footer,
     color: rgb(255, 255, 255);
 }
 
-.darklink{
-    color:black;
+.darklink {
+    color: black;
 }
 
 .space {
-    margin-left:5px; 
-    margin-right:5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 article a {
     color: black;
 }
@@ -105,7 +105,6 @@ nav {
     display: flex;
     width: 100%;
     background-color: rgb(36, 130, 50);
-    padding: 20px;
     justify-content: space-around;
     overflow: hidden;
     box-shadow: 2px 2px 5px rgb(103, 117, 105);
@@ -114,6 +113,7 @@ nav {
 .dropbtn,
 .buttonInformation,
 .buttonUeberUns {
+    padding: 20px;
     font-size: 30px;
     background-color: rgb(36, 130, 50);
     border: none;
@@ -190,11 +190,53 @@ br {
 
 input[type=text] {
     width: 60%;
+    border: none;
+    padding: 5px;
 }
 
 .search {
     padding: 30px;
     font-size: 20px;
+}
+
+button[type=submit] {
+    font-size: 18px;
+}
+
+.form-wrapper input[type=text],
+.form-wrapper input[type=password],
+input[name=validationEmail],
+input[name=validationPassword] {
+    width: 40%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-wrapper input[type=text]:focus,
+.form-wrapper input[type=password]:focus,
+input[name=validationEmail]:focus,
+input[name=validationPassword]:focus {
+    box-shadow: 0px 0px 4px 4px rgb(36, 130, 50);
+    transition: 0.1s;
+}
+
+input[type=submit] {
+    display: inline-block;
+    border: none;
+    margin: 5px 0 22px 0;
+    padding: 20px;
+    background: rgb(44, 47, 51);
+    color: white;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(36, 130, 50);
 }
 
 @media only screen and (max-width:1100px) {

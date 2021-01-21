@@ -1,3 +1,4 @@
+
 <h1>Registrierung</h1>
 
 <?php if($success === true) : ?>
@@ -32,8 +33,8 @@
             <label for="phone">Telefonnummer</label><br />
             <input id="phone" type="text" name="phone" placeholder="Telefonnummer(optional)..." value="<?=htmlspecialchars($_POST['phone'] ?? '')?>"/><br />
 
-            <hr>           
-            <p>Adressdaten</p>
+            <br>           
+            <h3>Adressdaten</h3>
 
             <label for="city">Stadtname</label><br />
             <input id="city" type="text" name="city" placeholder="Stadtname.." value="<?=htmlspecialchars($_POST['city'] ?? '')?>"/><br />
@@ -45,7 +46,7 @@
             <input id="zip" type="text" name="zip" placeholder="Postleitzahl..." value="<?=htmlspecialchars($_POST['zip'] ?? '')?>"/><br />
             
             <br />
-            <input type="submit" name="submit" value="absenden" />
+            <input type="submit" name="submit" value="Konto erstellen" />
         </form>
     </div>
 <?php endif; ?>

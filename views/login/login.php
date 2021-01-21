@@ -5,13 +5,13 @@
     </div>
 <? endif; ?>
 
-LOGIN
+<h1>Login</h1>
 <form action="<?=$_SERVER['PHP_SELF'].'?c=login&a=login';?>" method="post">
-    <label for="loginName">Email</label>
+    <label for="loginName"></label>
     <input type="text" name="validationEmail" id="loginName" placeholder="Ihre Emailadresse..."
     <?=isset($_POST['validationEmail']) ? 'value="'.htmlspecialchars($_POST['validationEmail']).'"' : ''?>>
     <br><br>
-    <label for="loginPassword">Passwort</label>
+    <label for="loginPassword"></label>
     <input type="password" name="validationPassword" id="loginPassword" placeholder="Passwort">
     <br><br>
     <input type="submit" name="submitLogin" value="Anmelden">

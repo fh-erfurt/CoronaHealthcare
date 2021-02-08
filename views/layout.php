@@ -39,7 +39,7 @@
 	<? else: ?>
 		<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 	<? endif; ?>
-		<a href="index.php?c=pages&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
+		<a href="index.php?c=shop&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
 	</div>
 </header>
 
@@ -50,11 +50,11 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-				<a href="index.php?a=Schutzmasken">Schutzmasken</a>
-				<a href="index.php?a=Desinfektionsmittel">Desinfektionsmittel</a>
-				<a href="index.php?a=Hygienepapier">Hygienepapier</a>
-				<a href="index.php?a=Reinigungsmittel">Reinigungsmittel</a>
-				<a href="index.php?a=Hautreinigung">Hautreinigung</a>
+				<a href="index.php?c=shop&a=shop&categoryId=1">Schutzmasken</a>
+				<a href="index.php?c=shop&a=shop&categoryId=2">Desinfektionsmittel</a>
+				<a href="index.php?c=shop&a=shop&categoryId=3">Hygienepapier</a>
+				<a href="index.php?c=shop&a=shop&categoryId=4">Reinigungsmittel</a>
+				<a href="index.php?c=shop&a=shop&categoryId=5">Hautreinigung</a>
 			</div>
 		</div>
 	</div>

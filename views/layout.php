@@ -39,7 +39,7 @@
 	<? else: ?>
 		<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 	<? endif; ?>
-		<a href="index.php?a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
+		<a href="index.php?c=pages&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
 	</div>
 </header>
 
@@ -59,7 +59,7 @@
 		</div>
 	</div>
 	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
-	<button class="buttonUeberUns"><a href="index.php?a=about">Über uns</a></button>
+	<button class="buttonUeberUns"><a href="index.php?c=pages&a=about">Über uns</a></button>
 </nav>
 
 

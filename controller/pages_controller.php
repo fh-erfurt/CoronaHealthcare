@@ -41,5 +41,9 @@ class PagesController extends \app\core\Controller
 	{
 
 	}
+	public function actionShoppingcart()
+	{
+
+	}
 	
 }

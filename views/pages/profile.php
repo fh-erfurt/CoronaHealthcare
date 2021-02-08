@@ -6,7 +6,7 @@
     <title>Mein Profil</title>
 </head>
 <body>
-    <h3>Profilübersicht</h3>
+    <h1>Profilübersicht</h1>
     <p>Vorname : <?=$userFirstname?></p>
     <p>Nachname : <?=$userLastname?></p>
     <p>Emailadresse : <?=$userEmail?></p>

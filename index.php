@@ -14,6 +14,7 @@ require_once MODELSPATH.'address.class.php';
 require_once MODELSPATH.'category.class.php';
 require_once MODELSPATH.'order.class.php';
 require_once MODELSPATH.'orderHistory.class.php';
+require_once MODELSPATH.'orderProductMapping.class.php';
 require_once MODELSPATH.'product.class.php';
 require_once MODELSPATH.'profile.class.php';
 

@@ -67,8 +67,18 @@ class ShopController extends \app\core\Controller
     
 	public function actionShoppingcart()
 	{
-
+        $fullPrice = 0;
+        if(!empty($_SESSION['shoppingcart']))
+        {
+            foreach ($_SESSION['shoppingcart'] as $key => $product) 
+            {
+                $fullPrice += $product['price'];
+            }
+            $this->_params['shoppingcart'] = $_SESSION['shoppingcart'];
+            $this->_params['fullPrice'] = $fullPrice;
+        }
 	}
+
 
     public function actionProduct()
     {
@@ -82,15 +92,81 @@ class ShopController extends \app\core\Controller
         $this->_params['productDescription'] = $product['description'];
     }
 
+    public function actionDeleteProduct()
+    {
+        unset($_SESSION['shoppingcart'][$_POST['productID']]);
+        $this->redirect('index.php?c=shop&a=shoppingcart');
+    }
+
 
     public function actionAddProduct()
     {
+        
         $productID = $_POST['productID'];
         $product = \app\models\Product::findOne('id = ' . $productID);
         if (isset($product))
         {
-            $_SESSION['product'] = array();
-            array_push($_SESSION['product'], $product);
+            if (empty($_SESSION['shoppingcart']))
+            {
+                $_SESSION['shoppingcart'] = array();
+            }
+            array_push($_SESSION['shoppingcart'], $product);
         }
+    }
+
+
+    public function actionOrder()
+    {
+        if(!isset($_SESSION['user']))
+        {
+            $this->redirect('index.php?c=login&a=login&wantedToOrder=yes');
+        }
+        $fullPrice = 0;
+        if(!empty($_SESSION['shoppingcart']))
+        {
+            foreach ($_SESSION['shoppingcart'] as $key => $product) 
+            {
+                $fullPrice += $product['price'];
+            }
+            $this->_params['shoppingcart'] = $_SESSION['shoppingcart'];
+            $this->_params['fullPrice'] = $fullPrice;
+        }
+    }
+
+    public function actionFinishOrder()
+    {
+        $user = $_SESSION['user'];
+        $products = $_SESSION['shoppingcart'];
+
+        $orderData = array(
+            'profile' => $user['id']
+        );
+        $newOrder = new \app\models\Order($orderData);
+        $newOrder->insert($errors);
+        $orderID = \app\models\Order::findLastEntryPerID('id');
+        $orderHistoryDate = array(
+            'change' => 'Offen',
+            'order'  => $orderID
+        );
+        $newOrderHistory = new \app\models\OrderHistory($orderHistoryDate);
+        $newOrderHistory->insert($errors);
+
+        foreach ($products as $key => $product) {
+            $newOrderProductMappingData = array(
+                'product_id' => $product['id'],
+                'order_id'   => $orderID
+            );
+            $newOPMapping = new \app\models\OrderProductMapping($newOrderProductMappingData);
+            $newOPMapping->insert($errors);
+        }
+
+
+        unset($_SESSION['shoppingcart']);
+        $this->redirect('index.php?c=shop&a=success');
+    }
+
+    public function actionSuccess()
+    {
+
     }
 }

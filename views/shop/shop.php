@@ -33,7 +33,10 @@
                     <img src="assets/Logo.png">
                 <?php endif; ?>
                 <hr>
-
+                <form action="index.php?c=shop&a=addProduct" method="post">
+                <input type="hidden" name="productID" value="<?=$products[$key]['id']?>"></div>
+                <button>Zum Warenkorb hinzufügen</button>
+                </form>
                     Produkt: <?= $products[$key]['name']; ?> <br>
                     Preis: <?= $products[$key]['price']; ?> € <br>
                     <!-- Beschreibung: <?= $products[$key]['description']; ?> <br> -->

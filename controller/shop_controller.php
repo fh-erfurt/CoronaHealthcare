@@ -75,5 +75,22 @@ class ShopController extends \app\core\Controller
         $productID = $_GET['productID'];
         $product = \app\models\Product::findOne('id = ' . $productID);
         $this->_params['product'] = $product;
+        $this->_params['productID'] = $product['id'];
+        $this->_params['productName'] = $product['name'];
+        $this->_params['productPrice'] = $product['price'];
+        $this->_params['productPicture'] = $product['picturepath'];
+        $this->_params['productDescription'] = $product['description'];
+    }
+
+
+    public function actionAddProduct()
+    {
+        $productID = $_POST['productID'];
+        $product = \app\models\Product::findOne('id = ' . $productID);
+        if (isset($product))
+        {
+            $_SESSION['product'] = array();
+            array_push($_SESSION['product'], $product);
+        }
     }
 }

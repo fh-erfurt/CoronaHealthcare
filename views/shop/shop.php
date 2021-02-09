@@ -11,35 +11,60 @@
 <body>
         <div class="sidebar">
             <p>
+            <form action="index.php?c=shop&a=shop" method="post">
                 <?php if (isset($currentCategory)) :  ?>
                     Aktuelle Kategorie: <br> <?= $currentCategory ?><br>
                 <?php endif; ?></p>
-                <p> Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?></p>
-            
-            Kategorie <br>
-            Preis <br>
-            Bewertung <br>
+                 Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?>
+                <p> Kategorie </p>
+                <select name="categoryId" id="categoryId">
+                    <?php foreach($categories as $category) : ?>
+                        <option value="<?=$category['id']?>"
+                          <?php
+                          if(isset($_POST['categoryId']))
+                          {
+                            if ($category['id'] == $_POST['categoryId'])
+                            {
+                                echo "selected='selected'";
+                            }
+                          }
+                          ?>
+                            >
+                            <?=$category['name']?>
+                        </option>
+                    <?php endforeach; ?>
+                         
+                </select>
+                <p>Preis bis <?=$_POST['priceMax'] ?? $highestPrice?> €
+                <input name="priceMax" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMax'] ?? $highestPrice)?>" class="slider"></p>
+                <p>Preis ab <?=$_POST['priceMin'] ?? $lowestPrice?> €
+                <input name="priceMin" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMin'] ?? $lowestPrice)?>" class="slider"></p>
+                <input value="Filtern" type="submit"></input>
+            </form>
         </div>
 
 
 
         <?php foreach ($products as $key => $value) : ?>
             <div class="column">
-                <div class="product-card">
-                <a style="height: 100%; display:block;" href="index.php?c=shop&a=product&productID=<?=$products[$key]['id']?>"></a>
+                <div class="product_card">
+                <a href="index.php?c=shop&a=product&productID=<?=$products[$key]['id']?>">
                 <?php if($products[$key]['picturepath'] != 'Kein Bild angegeben'):  ?>
                     <img src="assets/<?=$products[$key]['picturepath']?>">
                 <?php else : ?>
                     <img src="assets/Logo.png">
                 <?php endif; ?>
-                <hr>
+                
                 <form action="index.php?c=shop&a=addProduct" method="post">
-                <input type="hidden" name="productID" value="<?=$products[$key]['id']?>"></div>
+                <input type="hidden" name="productID" value="<?=$products[$key]['id']?>">
+                
+                <p><?= $products[$key]['name']; ?> </p>
+                <p>   Preis: <?= $products[$key]['price']; ?> € </p>
                 <button>Zum Warenkorb hinzufügen</button>
                 </form>
-                    Produkt: <?= $products[$key]['name']; ?> <br>
-                    Preis: <?= $products[$key]['price']; ?> € <br>
-                    <!-- Beschreibung: <?= $products[$key]['description']; ?> <br> -->
+
+                
+                    <!-- Beschreibung: <?= $products[$key]['description']; ?> <br> --></a>
                 </div>
             </div>
 <?php endforeach; ?>

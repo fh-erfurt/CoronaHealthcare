@@ -1,12 +1,13 @@
-
+<h1>Login</h1>
 <? if (isset($error)) : ?>
-    <div>
+    <div class="error">
         <?=$error?>
     </div>
 <? endif; ?>
 
-<h1>Login</h1>
+
 <form action="<?=$_SERVER['PHP_SELF'].'?c=login&a=login';?>" method="post">
+    <div class="login">
     <label for="loginName"></label>
     <input type="text" name="validationEmail" id="loginName" placeholder="Ihre Emailadresse..."
     <?=isset($_POST['validationEmail']) ? 'value="'.htmlspecialchars($_POST['validationEmail']).'"' : ''?>>
@@ -14,13 +15,14 @@
     <label for="loginPassword"></label>
     <input type="password" name="validationPassword" id="loginPassword" placeholder="Passwort">
     <br><br>
-    <input type="submit" name="submitLogin" value="Anmelden">
     
+    <p>
     <input type="checkbox" name="rememberMe" id="check"
     <?=isset($_POST['rememberMe']) ? 'checked' : ''?>>
     <label for="check">angemeldet bleiben?</label>
-    <br><br>
-    <a class="darklink" href="<?=$_SERVER['SCRIPT_NAME']?>?c=login&a=register">Noch kein Konto?</a>
     
+    <a class="darklink" href="<?=$_SERVER['SCRIPT_NAME']?>?c=login&a=register">Noch kein Konto?</a></p>
+    <input type="submit" name="submitLogin" value="Anmelden">    
+    </div>
     <div class="clear"></div>
 </form>

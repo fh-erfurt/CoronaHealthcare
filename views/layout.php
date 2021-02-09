@@ -70,7 +70,7 @@
 		</main>
 	</div>
 	<footer>
-		&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a>
+		<p>&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a></p>
 	</footer>
 </body>
 

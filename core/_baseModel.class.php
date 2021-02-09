@@ -229,26 +229,6 @@ abstract class BaseModel
         return $result;
     }
 
-    public static function findLastEntryPerID($idRowName)
-    {
-        $db = $GLOBALS['db'];
-        $result = null;
-
-        try 
-        {
-            $sql = 'SELECT MAX('.$idRowName.') FROM ' . self::tablename();
-
-            $result = $db->query($sql)->fetchAll();
-        } 
-        catch (PDOException $e)
-        {
-            die('Select statement failed: ' . $e->getMessage());
-        }
-
-        return $result[0]['MAX(id)'];
-    }
-
-
     public static function findOne($whereStr = '')
     {
         $results = self::find($whereStr);

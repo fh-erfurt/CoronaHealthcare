@@ -17,10 +17,8 @@
 		<a href="index.php?a=start">
 			<h1>CoronaHealthcare</h1>
 		</a>
-		<form action="index.php?c=shop&a=shop" method="post">
-			<div class="search"><input type="text" name="name" placeholder="Suche.." value="<?=htmlspecialchars($_POST['name'] ?? '')?>">
-			<button type="submit"><i class="fa fa-search"></i></button></div>
-		</form>
+		<div class="search"><input type="text" name="search" placeholder="Suche..">
+		<button type="submit"><i class="fa fa-search"></i></button></div>
 	</div>
 
 
@@ -42,7 +40,6 @@
 		<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 	<? endif; ?>
 		<a href="index.php?c=shop&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
-		<i title="Produkte im Warenkorb" style="color:white;"><?=count($_SESSION['shoppingcart'])?></i>
 	</div>
 </header>
 
@@ -73,7 +70,7 @@
 		</main>
 	</div>
 	<footer>
-		<p>&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a></p>
+		&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a>
 	</footer>
 </body>
 

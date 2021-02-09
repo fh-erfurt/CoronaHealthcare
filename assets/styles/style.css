@@ -7,7 +7,6 @@
 
 body {
     margin: 0;
-    padding-bottom: 9vh;
 }
 
 #main {
@@ -83,6 +82,10 @@ footer,
 .login,
 .dropbtn {
     color: rgb(255, 255, 255);
+}
+
+.darklink {
+    color: black;
 }
 
 .space {
@@ -216,130 +219,24 @@ button[type=submit] {
     font-size: 18px;
 }
 
-.sidebar {
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 1em;
-    box-shadow: 2px 2px 5px rgb(103, 117, 105);
-    background: rgb(4, 15, 15);
-    color: rgb(224, 224, 224);
-    width: 200px;
-    height: 500px;
-}
-
-.sidebar p {
-    padding: 5px;
-    font-size: 20px;
-}
-
-.column {
+.form-wrapper input[type=text],
+.form-wrapper input[type=password],
+input[name=validationEmail],
+input[name=validationPassword] {
+    width: 40%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
     display: inline-block;
-    width: 22%;
-    padding: 10px;
-    height: 20%;
-}
-
-.product_card {
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.product_card p {
-    color: black;
-    font-size: 20px;
-}
-
-.product_card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgb(36, 130, 50);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 20px;
-    transition-duration: 0.3s;
-}
-
-.sidebar button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgb(36, 130, 50);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-    transition-duration: 0.3s;
-}
-
-.product_card button:hover,
-.sidebar button:hover {
-    background: rgb(44, 47, 51);
-}
-
-.error,
-.error-message {
-    margin: 15px;
-    color: rgb(189, 0, 0);
-    font-size: 17px;
-}
-
-.data {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    padding: 20px;
-}
-
-.adressdata {
-    flex-grow: 1;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.profiledata {
-    flex-grow: 1;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.data input[type=password],
-.data input[type=text] {
-    padding: 20px;
-    margin: 5px 0 22px 0;
-    width: 100%;
     border: none;
     background: #f1f1f1;
 }
 
-.login input[type=text],
-.login input[type=password] {
-    padding: 20px;
-    margin: 5px 0 22px 0;
-    width: 30%;
-    border: none;
-    background: #f1f1f1;
-    color: black;
-}
-
-.data input[type=password]:focus,
-.data input[type=text]:focus,
-.login input[type=text]:focus,
-.login input[type=password]:focus {
+.form-wrapper input[type=text]:focus,
+.form-wrapper input[type=password]:focus,
+input[name=validationEmail]:focus,
+input[name=validationPassword]:focus {
     box-shadow: 0px 0px 4px 4px rgb(36, 130, 50);
-    transition: 0.15s;
-}
-
-.darklink,
-.login p {
-    color: black;
+    transition: 0.1s;
 }
 
 input[type=submit] {
@@ -351,7 +248,6 @@ input[type=submit] {
     color: white;
     transition-duration: 0.3s;
     cursor: pointer;
-    font-size: 20px;
 }
 
 input[type=submit]:hover {
@@ -359,9 +255,39 @@ input[type=submit]:hover {
     background-color: rgb(36, 130, 50);
 }
 
+.sidebar {
+    float: left;
+    box-shadow: 2px 2px 5px rgb(103, 117, 105);
+    background: rgb(4, 15, 15);
+    padding: 30px;
+    color: rgb(224, 224, 224);
+    width: 200px;
+    min-height: calc(60vh);
+}
+
+sidebar p {
+    padding: 5px;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    padding: 10px;
+}
+
+.product-card {
+    height: 400px;
+    padding: 16px;
+    text-align: center;
+    background-color: #dbdbdb;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 footer {
     position: fixed;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     display: flex;
     width: 100%;
     background: rgb(44, 47, 51);
@@ -381,9 +307,7 @@ footer {
     }
     .topbar,
     footer,
-    .login,
-    .product_card p,
-    .product_card button {
+    .login {
         font-size: 15px;
     }
     .symbol {
@@ -412,9 +336,7 @@ footer {
     }
     .topbar,
     footer,
-    .login,
-    .product_card p,
-    .product_card button {
+    .login {
         font-size: 10px;
     }
     .symbol {
@@ -440,9 +362,7 @@ footer {
     }
     .topbar,
     footer,
-    .login,
-    .product_card p,
-    .product_card button {
+    .login {
         font-size: 7.5px;
     }
     .symbol {

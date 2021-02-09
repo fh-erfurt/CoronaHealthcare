@@ -7,17 +7,7 @@ class LoginController extends \app\core\Controller
 {
     public function actionLogin()
     {
-
-        if(isset($_GET['wantedToOrder']))
-        {
-            $wantedToOrder = $_GET['wantedToOrder'];
-            $_SESSION['wantedToOrder'] = 'yes';
-        }
         $error = null;
-        if(isset($wantedToOrder))
-        {
-            $error = 'Bitte melden Sie sich vor dem Bestellvorgang an.';
-        }
         if(isset($_POST['submitLogin']))
         {
             $userEmail = isset($_POST['validationEmail']) ? $_POST['validationEmail'] : '';
@@ -27,11 +17,6 @@ class LoginController extends \app\core\Controller
             {
                     $error = false;
                     $_SESSION['user'] = $user;
-                    if($_SESSION['wantedToOrder'] == 'yes')
-                    {
-                        unset($_SESSION['wantedToOrder']);
-                        $this->redirect('index.php?c=shop&a=order');
-                    }
                     $this->redirect('index.php?c=pages&a=profile');
             }
             else 
@@ -39,8 +24,8 @@ class LoginController extends \app\core\Controller
                 $error = 'Der Benutzername oder das Passwort ist falsch.';
             }
             $this->setParam('userEmail', $userEmail);
+            $this->setParam('error', $error);
         }
-        $this->setParam('error', $error);
     }
 
     public function actionRegister()
@@ -154,7 +139,7 @@ class LoginController extends \app\core\Controller
                 catch(\Exception $exceptionError)
                 {
                     $success = false;
-                    $errors['exceptionError'] = 'Beim DB Update ist etwas schief gegangen.';
+                    $errors['exceptionError'] = 'Beim DB Update was schief gegangen.';
                 }
             }
         }

@@ -13,11 +13,14 @@ class PagesController extends \app\core\Controller
 		$this->_params['userLastname'] = $_SESSION['user']['lastname'];
 		$this->_params['userEmail'] = $_SESSION['user']['email'];
 		$this->_params['userPhone'] = $_SESSION['user']['phone'];
-		$this->_params['orders'] = $allUserOrders;
 		foreach ($allUserOrders as $key => $order) 
 		{
-			
+			$allOPMappings = \app\models\OrderProductMapping::find('order_id = '. $order['id']);
+			$orderStatus = \app\models\OrderHistory::findLastEntryRowPerID('id')['change'];
+			$allUserOrders[$key]['status'] = $orderStatus;
+			$allUserOrders[$key]['mappings'] = $allOPMappings;
 		}
+		$this->_params['orders'] = $allUserOrders;
 	}
 
 	public function actionError404()

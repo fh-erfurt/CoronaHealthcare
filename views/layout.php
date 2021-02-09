@@ -42,7 +42,7 @@
 		<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 	<? endif; ?>
 		<a href="index.php?c=shop&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
-		<i title="Produkte im Warenkorb" style="color:white;"><?=count($_SESSION['shoppingcart'])?></i>
+		<i title="Produkte im Warenkorb" style="color:white;"><?=isset($_SESSION['shoppingcart']) ? count($_SESSION['shoppingcart']) : '0'?></i>
 	</div>
 </header>
 

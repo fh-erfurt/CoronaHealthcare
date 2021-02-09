@@ -57,7 +57,7 @@ class ShopController extends \app\core\Controller
         $amountOfFilteredProducts = count($products);
 
         print_r($filterString);
-
+        
         $this->_params['products'] = $products;
         $this->_params['amountOfFilteredProducts'] = $amountOfFilteredProducts;
         $this->_params['amountOfAllProducts'] = $amountOfAllProducts;
@@ -69,4 +69,11 @@ class ShopController extends \app\core\Controller
 	{
 
 	}
+
+    public function actionProduct()
+    {
+        $productID = $_GET['productID'];
+        $product = \app\models\Product::findOne('id = ' . $productID);
+        $this->_params['product'] = $product;
+    }
 }

@@ -87,12 +87,12 @@ class LoginController extends \app\core\Controller
 
             if($number === null || mb_strlen($number) === 0)
             {
-                $errors['number'] = 'Bitt geben Sie eine Hausnummer an.';
+                $errors['number'] = 'Bitte geben Sie eine Hausnummer an.';
             }
 
             if($zip === null || mb_strlen($zip) === 0)
             {
-                $errors['zip'] = 'Bitt geben Sie eine Postleitzahl an.';
+                $errors['zip'] = 'Bitte geben Sie eine Postleitzahl an.';
             }
 
             if(count($errors) === 0)

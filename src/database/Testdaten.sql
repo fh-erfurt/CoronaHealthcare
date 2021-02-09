@@ -26,7 +26,7 @@ INSERT INTO `category` (`id`, `name`) VALUES
 -- Daten für Tabelle product
 --
 
-INSERT INTO product (id, `name`, price, description, category_id) VALUES
+INSERT INTO `product` (`id`, `name`, `price`, `description`, `category_id`) VALUES
 (1, 'Einmalhandtücher', '5.99', 'Einlagig. Lieferbar in der Farbe: Natur. Zickzackfalz. Karton mit 5.000 Stck.', 3),
 (2, 'Waschlotion Kanister', '25.99', 'Zum Waschen und Pflegen der Hände. Besonders für empfindliche Haut.\r\n\r\nPh-neutral\r\nSeifen- und Alkalifrei\r\nRückfettend\r\nFlüssige Konsistenz für alle Spendersysteme', 5),
 (3, 'Händedesinfektion', '10.99', 'Schülkes desderman® care, zur hygienisch/chirogischen viruziden Händedesinfektion, mit besonders hautfreundlicher Pflegeformel.\r\n\r\nAnwendungsbereiche:\r\nHygienische und chirurgische Händedesinfektion zum Einreiben – unabhängig von Waschbecken und Wasser.', 2);
@@ -44,8 +44,8 @@ INSERT INTO `address` (`zip`, `street`, `number`, `city`) VALUES
 --
 
 INSERT INTO `profile` (`createdAt`, `firstname`, `lastname`, `phone`, `email`, `address`, `password`) VALUES
-('2021-01-20 16:13:08', 'Marvin', 'Ruppert', '01735929818', 'MarvinRuppert2@gmx.de', 5, '123456789'),
-('2021-01-20 16:14:49', 'Marvin', 'Ruppert', '2050', 'Marvin.Ruppert@on-geo.de', 5, '123456789');
+('2021-01-20 16:13:08', 'Marvin', 'Ruppert', '01735929818', 'MarvinRuppert2@gmx.de', 1, '123456789'),
+('2021-01-20 16:14:49', 'Marvin', 'Ruppert', '2050', 'Marvin.Ruppert@on-geo.de', 1, '123456789');
 
 
 

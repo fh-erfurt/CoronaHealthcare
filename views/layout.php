@@ -12,7 +12,7 @@
 </head>
 
 <header>
-	<div class="logo"><a href="index.php?a=start"><img src="assets/Logo.png" alt="Logo"></a></div>
+	<div class="logo"><a href="index.php?a=start"><img src="assets/Logo.png" width="200px" height="200px" alt="Logo"></a></div>
 	<div class="center">
 		<a href="index.php?a=start">
 			<h1>CoronaHealthcare</h1>

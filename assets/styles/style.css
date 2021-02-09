@@ -12,6 +12,7 @@ body {
 #main {
     display: flex;
     min-height: calc(100vh - 40vh);
+    text-align: right;
 }
 
 header {
@@ -26,19 +27,38 @@ article p {
     background-color: white;
 }
 
-.help p,
+.help p {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
 .help h3,
 .textStartseite p,
-.impressum {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+.impressum p {
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 5px;
+    font-size: 20px;
 }
 
 .textStartseite,
 .geschichte p {
-    padding: 50px;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+}
+
+.start p {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
 }
 
 .center {
@@ -77,10 +97,15 @@ article a {
     color: black;
 }
 
+
+/*
+IMG Size entfernt und die des Logos direkt angepasst, damit andere Bilder in echter Größe dargestellt werden können.
+
 img {
     height: 200px;
     width: 200px;
 }
+*/
 
 .symbol {
     align-items: flex-end;

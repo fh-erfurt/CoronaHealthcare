@@ -12,18 +12,16 @@
         <div class="sidebar">
             <p>
             <form action="index.php?c=shop&a=shop" method="post">
-                <?php if (isset($currentCategory)) :  ?>
-                    Aktuelle Kategorie: <br> <?= $currentCategory ?><br>
-                <?php endif; ?></p>
-                 Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?>
-                <p> Kategorie </p>
+                 Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?><br><br>
+                Aktuelle Kategorie: <br>
                 <select name="categoryId" id="categoryId">
+                    <option value="">Optional</option>
                     <?php foreach($categories as $category) : ?>
                         <option value="<?=$category['id']?>"
                           <?php
-                          if(isset($_POST['categoryId']))
+                          if(isset($currentCategory))
                           {
-                            if ($category['id'] == $_POST['categoryId'])
+                            if ($category['name'] == $currentCategory)
                             {
                                 echo "selected='selected'";
                             }
@@ -50,9 +48,9 @@
                 <div class="product_card">
                 <a href="index.php?c=shop&a=product&productID=<?=$products[$key]['id']?>">
                 <?php if($products[$key]['picturepath'] != 'Kein Bild angegeben'):  ?>
-                    <img src="assets/<?=$products[$key]['picturepath']?>">
+                    <img class="img" src="assets/<?=$products[$key]['picturepath']?>">
                 <?php else : ?>
-                    <img src="assets/Logo.png">
+                    <img class="img" src="assets/Logo.png">
                 <?php endif; ?>
                 
                 <form action="index.php?c=shop&a=addProduct" method="post">

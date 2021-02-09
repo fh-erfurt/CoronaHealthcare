@@ -26,6 +26,7 @@
     <a style="color:black;"href="index.php?c=shop&a=order">Zum Bestellvorgang</a>
     <?php else: ?>
     Ihr Warenkorb ist leer.
+    Das kann <a class="darklink" href="index.php?c=shop&a=shop"><b>HIER</b></a> geändert werden.
     <? endif; ?>
 </p></body>
 </html>

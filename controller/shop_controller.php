@@ -49,7 +49,7 @@ class ShopController extends \app\core\Controller
         }   
 
 
-        if(isset($categoryId))
+        if(!empty($categoryId))
         {
             $currentCategory = \app\models\Category::findOne('id = ' . $categoryId);
             $this->_params['currentCategory'] = $currentCategory['name'];
@@ -95,7 +95,7 @@ class ShopController extends \app\core\Controller
         $this->_params['products'] = $products;
         $this->_params['amountOfFilteredProducts'] = $amountOfFilteredProducts;
         $this->_params['amountOfAllProducts'] = $amountOfAllProducts;
-        $this->_params['categories'] = \app\models\Category::find();
+        $this->_params['categories'] = \app\models\Category::findOrderBy('name');
 
     }
 

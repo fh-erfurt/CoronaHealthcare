@@ -95,14 +95,13 @@ article a {
 }
 
 
-/*
-IMG Size entfernt und die des Logos direkt angepasst, damit andere Bilder in echter Größe dargestellt werden können.
 
-img {
+
+.img {
     height: 200px;
     width: 200px;
 }
-*/
+
 
 .symbol {
     align-items: flex-end;

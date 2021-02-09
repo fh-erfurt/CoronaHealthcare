@@ -11,14 +11,36 @@
 <body>
         <div class="sidebar">
             <p>
+            <form action="index.php?c=shop&a=shop" method="post">
                 <?php if (isset($currentCategory)) :  ?>
                     Aktuelle Kategorie: <br> <?= $currentCategory ?><br>
                 <?php endif; ?></p>
                  Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?>
                 <p> Kategorie </p>
-                <p>Preis
-            <input type="range" min="1" max="100" value="50" class="slider"></p>
-            <button>Filtern</button>
+                <select name="categoryId" id="categoryId">
+                    <?php foreach($categories as $category) : ?>
+                        <option value="<?=$category['id']?>"
+                          <?php
+                          if(isset($_POST['categoryId']))
+                          {
+                            if ($category['id'] == $_POST['categoryId'])
+                            {
+                                echo "selected='selected'";
+                            }
+                          }
+                          ?>
+                            >
+                            <?=$category['name']?>
+                        </option>
+                    <?php endforeach; ?>
+                         
+                </select>
+                <p>Preis bis <?=$_POST['priceMax'] ?? $highestPrice?> €
+                <input name="priceMax" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMax'] ?? $highestPrice)?>" class="slider"></p>
+                <p>Preis ab <?=$_POST['priceMin'] ?? $lowestPrice?> €
+                <input name="priceMin" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMin'] ?? $lowestPrice)?>" class="slider"></p>
+                <input value="Filtern" type="submit"></input>
+            </form>
         </div>
 
 

@@ -7,23 +7,47 @@ class ShopController extends \app\core\Controller
 {
     public function actionShop($categoryId = null, $priceMax = null, $priceMin = null)
     {
+        $db = $GLOBALS['db'];
         if(isset($_GET['categoryId']))
         {
             $categoryId = $_GET['categoryId'];
         }
-        if(isset($_GET['priceMax']))
+        if(isset($_POST['categoryId']))
         {
-            $priceMax = $_GET['priceMax'];
+            $categoryId = $_POST['categoryId'];
         }
-        if(isset($_GET['priceMin']))
+        if(isset($_POST['name']))
         {
-            $priceMin = $_GET['priceMin'];
+            $productName = $_POST['name'];
+        }
+        if(isset($_POST['priceMax']))
+        {
+            $priceMax = $_POST['priceMax'];
+        }
+        if(isset($_POST['priceMin']))
+        {
+            $priceMin = $_POST['priceMin'];
         }
 
-
+        
         $products = \app\models\Product::find();
         $amountOfAllProducts = count($products);
         $filterString = '';
+
+        $highestPrice = 0;
+        foreach ($products as $key=>$product) {
+            if ($product['price'] > $highestPrice) {
+                $highestPrice = $product['price'] + 1;
+            }
+        }
+
+        $lowestPrice = 10000;
+        foreach ($products as $key=>$product) {
+            if ($product['price'] < $lowestPrice) {
+                $lowestPrice = $product['price'];
+            }
+        }   
+
 
         if(isset($categoryId))
         {
@@ -31,6 +55,16 @@ class ShopController extends \app\core\Controller
             $this->_params['currentCategory'] = $currentCategory['name'];
 
             $filterString = 'category_id = ' .$categoryId;
+            $products = \app\models\Product::find($filterString);
+            if(isset($priceMax) || isset($priceMin) || isset($productName))
+            {
+                $filterString .= ' AND ';
+            }
+        }
+
+        if(isset($productName))
+        {
+            $filterString .= 'name LIKE ' .$db->quote('%'.$productName.'%');
             $products = \app\models\Product::find($filterString);
             if(isset($priceMax) || isset($priceMin))
             {
@@ -40,9 +74,8 @@ class ShopController extends \app\core\Controller
 
         if(isset($priceMax))
         {
-            $filterString .= 'price < ' .$priceMax;
+            $filterString .= 'price <= ' .$priceMax;
             $products = \app\models\Product::find($filterString);
-            print_r($filterString);
             if(isset($priceMin))
             {
                 $filterString .= ' AND ';
@@ -51,16 +84,18 @@ class ShopController extends \app\core\Controller
 
         if(isset($priceMin))
         {
-            $filterString .= 'price > ' .$priceMin;
+            $filterString .= 'price >= ' .$priceMin;
             $products = \app\models\Product::find($filterString);
         }
         $amountOfFilteredProducts = count($products);
+  
 
-        print_r($filterString);
-        
+        $this->_params['highestPrice'] = $highestPrice;
+        $this->_params['lowestPrice'] = $lowestPrice;
         $this->_params['products'] = $products;
         $this->_params['amountOfFilteredProducts'] = $amountOfFilteredProducts;
         $this->_params['amountOfAllProducts'] = $amountOfAllProducts;
+        $this->_params['categories'] = \app\models\Category::find();
 
     }
 

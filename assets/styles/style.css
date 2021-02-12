@@ -13,14 +13,12 @@ body {
 #main {
     display: flex;
     min-height: calc(100vh - 40vh);
-    text-align: right;
 }
 
 header {
     display: flex;
     background: rgb(44, 47, 51);
-    justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
 }
 
 article p {
@@ -28,38 +26,13 @@ article p {
     background-color: white;
 }
 
-.help p {
-    padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 20px;
+.help p,
+.impressum p,
+.start p,
+.geschichte p {
+    padding: 20px;
     font-size: 20px;
     text-align: left;
-}
-
-.help h3,
-.textStartseite p,
-.impressum p {
-    padding-top: 5px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 5px;
-    font-size: 20px;
-}
-
-.textStartseite,
-.geschichte p {
-    padding-top: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-size: 20px;
-}
-
-.start p {
-    padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-size: 20px;
 }
 
 .center {
@@ -94,14 +67,10 @@ article a {
     color: black;
 }
 
-
-
-
 .img {
     height: 200px;
     width: 200px;
 }
-
 
 .symbol {
     align-items: flex-end;
@@ -111,10 +80,9 @@ article a {
     justify-content: space-between;
 }
 
-.symbol,
-.logo {
+.symbol {
     align-self: flex-end;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 article {
@@ -124,18 +92,18 @@ article {
 
 nav {
     display: flex;
-    width: 100%;
     background-color: rgb(36, 130, 50);
     justify-content: space-around;
     overflow: hidden;
     box-shadow: 2px 2px 5px rgb(103, 117, 105);
+    width: 100%;
 }
 
 .dropbtn,
 .buttonInformation,
 .buttonUeberUns {
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 25px;
     background-color: rgb(36, 130, 50);
     border: none;
     outline: none;
@@ -155,10 +123,6 @@ aside {
     padding: 1em;
     flex: 0 0 20vw;
     color: rgb(224, 224, 224);
-}
-
-br {
-    font-size: 30px;
 }
 
 .shop {
@@ -230,6 +194,10 @@ button[type=submit] {
 .sidebar p {
     padding: 5px;
     font-size: 20px;
+}
+
+.categoryId {
+    background-color: rgb(36, 130, 50);
 }
 
 .column {
@@ -341,8 +309,6 @@ button[type=submit] {
     color: black;
 }
 
-
-
 input[type=submit] {
     display: inline-block;
     border: none;
@@ -395,7 +361,7 @@ footer {
         font-size: 25px;
     }
     nav {
-        font-size: 25px;
+        font-size: 20px;
     }
     p,
     br,

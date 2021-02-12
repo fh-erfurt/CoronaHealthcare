@@ -2,7 +2,7 @@
 
 <head>
 	<title>CoronaHealthcare</title>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://kit.fontawesome.com/7627145794.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
 	<?php if (isset($css) && is_array($css)) : ?>
 		<?php foreach ($css as $index => $file) : ?>

@@ -13,9 +13,9 @@
             <p>
             <form action="index.php?c=shop&a=shop" method="post">
                  Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?><br><br>
-                Aktuelle Kategorie: <br>
+                 Aktuelle Kategorie:
                 <select name="categoryId" id="categoryId">
-                    <option value="">Optional</option>
+                    <option value="">Alle</option>
                     <?php foreach($categories as $category) : ?>
                         <option value="<?=$category['id']?>"
                           <?php

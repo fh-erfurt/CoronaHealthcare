@@ -12,7 +12,7 @@ body {
 
 #main {
     display: flex;
-    min-height: calc(100vh - 40vh);
+    min-height: calc(100vh - 28vh);
 }
 
 header {
@@ -21,38 +21,82 @@ header {
     padding: 5px;
 }
 
-article p {
-    font-size: 15px;
-    background-color: white;
+h1 {
+    font-size: 50px;
 }
 
-.help p,
+a {
+    color: white;
+}
+
+
+/*about.php*/
+
+.history {
+    display: table;
+}
+
+.history p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.rowHistory {
+    display: table-row;
+}
+
+.textHistory {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+}
+
+
+/*impressum.php, help.php*/
+
 .impressum p,
-.start p,
-.geschichte p {
+.help p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+.impressum a {
+    color: black;
+}
+
+
+/*start.php*/
+
+.start p {
     padding: 20px;
     font-size: 20px;
     text-align: left;
 }
 
-.center {
-    flex-grow: 2;
+aside {
+    background: rgb(4, 15, 15);
+    padding: 1em;
+    flex: 0 0 15vw;
+    width: 100%;
+    color: rgb(224, 224, 224);
 }
 
-.topnav input[type=text] {
-    border: none;
+
+/*layout.php*/
+
+.center {
+    flex-grow: 2;
 }
 
 .login {
     font-size: 20px;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-a,
-footer,
+footer p,
 .login,
 .dropbtn {
     color: rgb(255, 255, 255);
@@ -63,10 +107,6 @@ footer,
     margin-right: 5px;
 }
 
-article a {
-    color: black;
-}
-
 .img {
     height: 200px;
     width: 200px;
@@ -74,20 +114,12 @@ article a {
 
 .symbol {
     align-items: flex-end;
+    align-self: flex-end;
     flex-direction: column;
     padding-right: 50px;
     padding-bottom: 30px;
     justify-content: space-between;
-}
-
-.symbol {
-    align-self: flex-end;
     font-size: 35px;
-}
-
-article {
-    flex: 1;
-    justify-content: space-around;
 }
 
 nav {
@@ -118,30 +150,13 @@ nav {
     background: rgb(44, 47, 51);
 }
 
-aside {
-    background: rgb(4, 15, 15);
-    padding: 1em;
-    flex: 0 0 20vw;
-    color: rgb(224, 224, 224);
-}
-
-.shop {
-    overflow: hidden;
-}
-
-.shop .icon {
-    display: none;
-}
-
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background: white;
 }
 
 .dropdown-content a {
@@ -160,11 +175,7 @@ aside {
     background-color: rgb(36, 130, 50);
 }
 
-.active {
-    background-color: darkgray;
-}
-
-input[type=text] {
+.search input[type=text] {
     width: 60%;
     border: none;
     padding: 5px;
@@ -175,9 +186,24 @@ input[type=text] {
     font-size: 20px;
 }
 
-button[type=submit] {
-    font-size: 18px;
+.search button[type=submit] {
+    font-size: 17px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    background: rgb(44, 47, 51);
+    height: 9vh;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*shop.php*/
 
 .sidebar {
     float: left;
@@ -187,28 +213,24 @@ button[type=submit] {
     box-shadow: 2px 2px 5px rgb(103, 117, 105);
     background: rgb(4, 15, 15);
     color: rgb(224, 224, 224);
-    width: 200px;
+    width: 10%;
     height: 500px;
 }
 
 .sidebar p {
-    padding: 5px;
+    padding: 0.6%;
     font-size: 20px;
 }
 
-.categoryId {
-    background-color: rgb(36, 130, 50);
-}
-
-.column {
+.columnShop {
     display: inline-block;
     width: 22%;
-    padding: 10px;
+    padding: 0.4%;
     height: 20%;
 }
 
 .product_card {
-    padding: 16px;
+    padding: 3%;
     text-align: center;
     background-color: #f1f1f1;
     overflow-x: hidden;
@@ -220,10 +242,11 @@ button[type=submit] {
     font-size: 20px;
 }
 
-.product_card button {
+.product_card button,
+.sidebar input[type=submit] {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 3.5%;
     color: white;
     background-color: rgb(36, 130, 50);
     text-align: center;
@@ -233,36 +256,31 @@ button[type=submit] {
     transition-duration: 0.3s;
 }
 
-.sidebar button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgb(36, 130, 50);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-    transition-duration: 0.3s;
+.sidebar input[type=submit] {
+    padding: 5%;
 }
 
 .product_card button:hover,
-.sidebar button:hover {
+.sidebar input[type=submit]:hover {
     background: rgb(44, 47, 51);
 }
 
-.error,
+
+/*register.php, login.php*/
+
+
+/*.error,
 .error-message {
     margin: 15px;
     color: rgb(189, 0, 0);
     font-size: 17px;
-}
+}*/
 
 .data {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 20px;
+    padding: 1%;
 }
 
 .adressdata {
@@ -328,18 +346,6 @@ input[type=submit]:hover {
 
 input[type=submit]:disabled {
     background-color: rgb(187, 187, 187);
-}
-
-footer {
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    width: 100%;
-    background: rgb(44, 47, 51);
-    height: 9vh;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 @media only screen and (max-width:1100px) {

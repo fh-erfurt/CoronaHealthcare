@@ -10,9 +10,9 @@
 <body>
     <div id="main">
         <div class='start'>
-        </br><img src=".\assets\FrauStartseite.jpg"/>
+        </br><img src=".\assets\FrauStartseite.jpg" style="width:60%;height:50%;"/>
             <p>
-                    Die Auswahl der wichtigsten Corona-Produkte finden Sie bei CoronaHealthcare.
+                    Hier finden Sie die wichtigste Auswahl an Produkten zur Eindämmung der Pandemie.
                     Für uns alle kam die Corona Pandemie überraschend und niemand war auf die aktuelle Situation vorbereitet. 
                     Das Virus hat alle Länder fest im Griff und es wurden weltweit Maßnahmen zur Eindämmung der Pandemie getroffen. 
                     Jeder Bürger ist angehalten sein Möglichstes zu tun und trägt täglich einen Teil dazu bei, 

@@ -44,7 +44,7 @@
 
 
         <?php foreach ($products as $key => $value) : ?>
-            <div class="column">
+            <div class="columnShop">
                 <div class="product_card">
                 <a href="index.php?c=shop&a=product&productID=<?=$products[$key]['id']?>">
                 <?php if($products[$key]['picturepath'] != 'Kein Bild angegeben'):  ?>

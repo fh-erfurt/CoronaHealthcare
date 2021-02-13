@@ -8,11 +8,10 @@
 </head>
 
 <body>
-    <article>
         <div class='help'>
             <h2>FAQ</h2>
                 <p>
-                    <strong>Gibt es Lieferengpässe durch die Pandemie?</strong><br>
+                    <strong>Gibt es Lieferengpässe durch die Pandemie?</strong><br><br>
             
                 
                     Wir arbeiten seit Jahren mit zuverlässigen Lieferanten Hand in Hand und haben ein zuverlässiges Netzwerk für den Zufluss neuer Ware.
@@ -20,7 +19,7 @@
                 </p>
                
                 <p>
-                    <strong>Wieso gibt es keinen Impfstoff bei Ihnen zu erwerben?</strong><br>
+                    <strong>Wieso gibt es keinen Impfstoff bei Ihnen zu erwerben?</strong><br><br>
                  
                     Die aktuellen Impfstoffe haben kühlspezifische Auflagen, die unsere Lieferanten leider zum jetzigen Zeitpunkt nicht erfüllen.
                     Wir stehen mit einem neuen Dienstleister in Kontakt und versuchen schnellstmöglich den Verkauf von Impfstoffen zu ermöglichen.
@@ -28,7 +27,7 @@
                 </p>
                
                 <p> 
-                    <strong>Haben Sie einen Vor-Ort-Verkauf?</strong><br>
+                    <strong>Haben Sie einen Vor-Ort-Verkauf?</strong><br><br>
             
                 
                     Einen Vor-Ort-Verkauf bieten wir zum jetzigen Zeitpunkt noch nicht an. Kleinstmengen können über unseren Shop oder telefonisch
@@ -36,7 +35,7 @@
                 </p>
                
                 <p>
-                    <strong>Bieten Sie die turnusmäßige Lieferung der Ware an?</strong><br>
+                    <strong>Bieten Sie die turnusmäßige Lieferung der Ware an?</strong><br><br>
                 
                     Die turnusmäßige Lieferung ist über unseren Verkauf möglich und auch durch diesen zu aktivieren. Hierfür melden Sie sich gern über die 
                     Vermittlung bei unserem Haus.
@@ -52,20 +51,20 @@
                 </p>
                
                 <p>
-                    <strong>Welches Rückgaberecht habe ich?</strong><br>
+                    <strong>Welches Rückgaberecht habe ich?</strong><br><br>
 
                 
                     Bei unseren Produkten gelten die gesetzlichen Rückgaberechte.
                 </p>
                
                 <p>
-                    <strong>In welchem Liefergebiet agieren Sie?</strong><br>
+                    <strong>In welchem Liefergebiet agieren Sie?</strong><br><br>
 
                
                     Wir liefern Deutschlandweit. Verbrauchsmaterialien, die keine besondere Kühlung benötigen, können Weltweit versandt werden.
                 </p>
         </div>
-    </article>
+    
 </body>
 
 </html>

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <article>
         <div class='impressum'>
             <h2>Impressum</h2>
             
@@ -56,9 +55,9 @@
                 Es gelten folgende berufsrechtliche Regelungen: Arzt-Gesetzbuch Regelungen einsehbar unter: http://www.aerztekammer-nrw.de.
             </p><br>
 
-            <p>
-                <strong>Haftungsausschluss: </strong><br><br>
-
+            
+                <h3>Haftungsausschluss </h3>
+                <p>
                 <strong>Haftung für Inhalte</strong><br><br>
                 Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
                 Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter 
@@ -94,7 +93,7 @@
                 Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
             </p>
         </div>
-    </article>
+    
 </body>
 
 </html>

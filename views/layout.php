@@ -47,7 +47,7 @@
 </header>
 
 <nav>
-	<div class="shop" id="navigation">
+	
 		<div class="dropdown">
 			<button class="dropbtn" ><a href="index.php?c=shop&a=shop">Shop</a>
 				<i class="fa fa-caret-down"></i>
@@ -60,7 +60,7 @@
 				<a href="index.php?c=shop&a=shop&categoryId=5">Hautreinigung</a>
 			</div>
 		</div>
-	</div>
+	
 	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
 	<button class="buttonUeberUns"><a href="index.php?c=pages&a=about">Über uns</a></button>
 </nav>

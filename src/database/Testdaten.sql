@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 08. Feb 2021 um 13:44
+-- Erstellungszeit: 13. Feb 2021 um 09:41
 -- Server-Version: 10.4.14-MariaDB
 -- PHP-Version: 7.4.11
 
@@ -26,10 +26,10 @@ INSERT INTO `category` (`id`, `name`) VALUES
 -- Daten für Tabelle product
 --
 
-INSERT INTO `product` (`id`, `name`, `price`, `description`, `picturePath` , `category_id`) VALUES
-(1, 'Einmalhandtücher', '5.99', 'Einlagig. Lieferbar in der Farbe: Natur. Zickzackfalz. Karton mit 5.000 Stck.', 3),
-(2, 'Waschlotion Kanister', '25.99', 'Zum Waschen und Pflegen der Hände. Besonders für empfindliche Haut.\r\n\r\nPh-neutral\r\nSeifen- und Alkalifrei\r\nRückfettend\r\nFlüssige Konsistenz für alle Spendersysteme', 5),
-(3, 'Händedesinfektion', '10.99', 'Schülkes desderman® care, zur hygienisch/chirogischen viruziden Händedesinfektion, mit besonders hautfreundlicher Pflegeformel.\r\n\r\nAnwendungsbereiche:\r\nHygienische und chirurgische Händedesinfektion zum Einreiben – unabhängig von Waschbecken und Wasser.', 2),
+INSERT INTO `product` (`id`, `name`, `price`, `description`, `picturepath`, `category_id`) VALUES
+(1, 'Einmalhandtücher', '5.99', 'Einlagig. Lieferbar in der Farbe: Natur. Zickzackfalz. Karton mit 5.000 Stck.', 'Einmalhandtücher.jpg', 3),
+(2, 'Waschlotion Kanister', '25.99', 'Zum Waschen und Pflegen der Hände. Besonders für empfindliche Haut.\r\n\r\nPh-neutral\r\nSeifen- und Alkalifrei\r\nRückfettend\r\nFlüssige Konsistenz für alle Spendersysteme', 'Waschlotion Kanister.jpg', 5),
+(3, 'Händedesinfektion', '10.99', 'Schülkes desderman® care, zur hygienisch/chirogischen viruziden Händedesinfektion, mit besonders hautfreundlicher Pflegeformel.\r\n\r\nAnwendungsbereiche:\r\nHygienische und chirurgische Händedesinfektion zum Einreiben – unabhängig von Waschbecken und Wasser.', 'handdesinfektion.png', 2),
 (4, 'Reinigungspapier auf Rolle', '36.99', 'Ideal für die Maschinenreinigung. 38 cm breit, 3-lagig, extra stark, stahlblau.\r\nPer Rolle 1000 Abrisse à 38 cm', 'Reinigungspapier_Rolle.jpg', 3),
 (5, 'Tork Reinigungspapier, 2er Pack', '43.00', 'Ideal für die Maschinenreinigung, für Industrie und Werkstätten. 37 cm breit, 2-lagiges perforiertes Tissue-Reinigungspapier, stahlblau. Im 2er Pack, per Rolle 1.000 Abrisse à 34 cm.', 'Tork_Reinigungspapier.jpg', 3),
 (6, 'Tork Reinigungspapier Kleinrolle Advanced 10x', '47.00', 'Sehr strapazierfähiges Wischtuch für verschiedenste Reinigungsarbeiten. 23 cm breit, 2-lagig perforiertes Reinigungspapier. Sehr saugfähig im 10 er Pack, per Rolle 200 Abrisse à 28 cm.', 'Tork_Kleinrolle.jpg', 3),

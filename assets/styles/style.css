@@ -81,8 +81,10 @@ aside {
     background: rgb(4, 15, 15);
     padding: 1em;
     flex: 0 0 15vw;
-    width: 100%;
     color: rgb(224, 224, 224);
+    width: 400px;
+    height: 630px;
+    overflow-y: scroll;
 }
 
 

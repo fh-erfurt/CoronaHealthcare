@@ -1,4 +1,4 @@
-<h1>Login</h1>
+
 <? if (isset($error)) : ?>
     <div class="error">
         <?=$error?>
@@ -7,7 +7,8 @@
 
 
 <form action="<?=$_SERVER['PHP_SELF'].'?c=login&a=login';?>" method="post">
-    <div class="login">
+    <div class="loginForm">
+    <h1>Login</h1>
     <label for="loginName"></label>
     <input type="text" name="validationEmail" id="loginName" placeholder="Ihre Emailadresse..." value="<?=$_POST['validationEmail'] ?? ''?>">
     <br><br>

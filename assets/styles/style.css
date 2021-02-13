@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     text-decoration: none;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    padding-bottom: 9vh;
+    padding-bottom: 10vh;
 }
 
 #main {
@@ -22,7 +22,7 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 a {
@@ -77,14 +77,14 @@ a {
     text-align: left;
 }
 
-aside {
+.aside {
     background: rgb(4, 15, 15);
     padding: 1em;
-    flex: 0 0 15vw;
     color: rgb(224, 224, 224);
-    width: 400px;
-    height: 630px;
+    width: 70%;
+    height: 650px;
     overflow-y: scroll;
+    margin-top: 0.75%;
 }
 
 
@@ -94,7 +94,16 @@ aside {
     flex-grow: 2;
 }
 
-.login {
+.logo {
+    flex-grow: 0.5;
+}
+
+.right {
+    flex-grow: 0.25;
+}
+
+.right p,
+.right a {
     font-size: 20px;
 }
 
@@ -225,13 +234,18 @@ footer {
 }
 
 .columnShop {
-    display: inline-block;
+    display: inline;
+    float: left;
     width: 22%;
     padding: 0.4%;
-    height: 20%;
 }
 
-.product_card {
+.test {
+    padding-left: 15%;
+    padding-top: 0.5%;
+}
+
+.productCard {
     padding: 3%;
     text-align: center;
     background-color: #f1f1f1;
@@ -239,12 +253,12 @@ footer {
     overflow-y: hidden;
 }
 
-.product_card p {
+.productCard p {
     color: black;
     font-size: 20px;
 }
 
-.product_card button,
+.productCard button,
 .sidebar input[type=submit] {
     border: none;
     outline: 0;
@@ -262,7 +276,7 @@ footer {
     padding: 5%;
 }
 
-.product_card button:hover,
+.productCard button:hover,
 .sidebar input[type=submit]:hover {
     background: rgb(44, 47, 51);
 }
@@ -306,8 +320,12 @@ footer {
     background: #f1f1f1;
 }
 
-.login input[type=text],
-.login input[type=password] {
+.loginForm {
+    margin-top: 6%;
+}
+
+.loginForm input[type=text],
+.loginForm input[type=password] {
     padding: 20px;
     margin: 5px 0 22px 0;
     width: 30%;
@@ -318,14 +336,15 @@ footer {
 
 .data input[type=password]:focus,
 .data input[type=text]:focus,
-.login input[type=text]:focus,
-.login input[type=password]:focus {
+.loginForm input[type=text]:focus,
+.loginForm input[type=password]:focus {
     box-shadow: 0px 0px 4px 4px rgb(36, 130, 50);
     transition: 0.15s;
 }
 
 .darklink,
-.login p {
+.loginForm p,
+.loginForm h1 {
     color: black;
 }
 

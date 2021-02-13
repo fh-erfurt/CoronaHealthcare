@@ -34,18 +34,18 @@
                          
                 </select>
                 <p>Preis bis <?=$_POST['priceMax'] ?? $highestPrice?> €
-                <input name="priceMax" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMax'] ?? $highestPrice)?>" class="slider"></p>
+                <input name="priceMax" type="range"  min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMax'] ?? $highestPrice)?>" class="slider"></p>
                 <p>Preis ab <?=$_POST['priceMin'] ?? $lowestPrice?> €
-                <input name="priceMin" type="range" min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMin'] ?? $lowestPrice)?>" class="slider"></p>
+                <input name="priceMin" type="range"  min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMin'] ?? $lowestPrice)?>" class="slider"></p>
                 <input value="Filtern" type="submit"></input>
             </form>
         </div>
 
 
-
+        <div class = "test">
         <?php foreach ($products as $key => $value) : ?>
             <div class="columnShop">
-                <div class="product_card">
+                <div class="productCard">
                 <a href="index.php?c=shop&a=product&productID=<?=$products[$key]['id']?>">
                 <?php if($products[$key]['picturepath'] != 'Kein Bild angegeben'):  ?>
                     <img class="img" src="assets/<?=$products[$key]['picturepath']?>">
@@ -57,7 +57,7 @@
                 <input type="hidden" name="productID" value="<?=$products[$key]['id']?>">
                 
                 <p><?= $products[$key]['name']; ?> </p>
-                <p>   Preis: <?= $products[$key]['price']; ?> € </p>
+                <p>    <?= $products[$key]['price']; ?> € </p>
                 <button>Zum Warenkorb hinzufügen</button>
                 </form>
 
@@ -66,8 +66,7 @@
                 </div>
             </div>
 <?php endforeach; ?>
-
-
+</div>
 
 </body>
 

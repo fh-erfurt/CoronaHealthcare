@@ -26,7 +26,7 @@ INSERT INTO `category` (`id`, `name`) VALUES
 -- Daten für Tabelle product
 --
 
-INSERT INTO `product` (`id`, `name`, `price`, `description`, `category_id`) VALUES
+INSERT INTO `product` (`id`, `name`, `price`, `description`, `picturePath` , `category_id`) VALUES
 (1, 'Einmalhandtücher', '5.99', 'Einlagig. Lieferbar in der Farbe: Natur. Zickzackfalz. Karton mit 5.000 Stck.', 3),
 (2, 'Waschlotion Kanister', '25.99', 'Zum Waschen und Pflegen der Hände. Besonders für empfindliche Haut.\r\n\r\nPh-neutral\r\nSeifen- und Alkalifrei\r\nRückfettend\r\nFlüssige Konsistenz für alle Spendersysteme', 5),
 (3, 'Händedesinfektion', '10.99', 'Schülkes desderman® care, zur hygienisch/chirogischen viruziden Händedesinfektion, mit besonders hautfreundlicher Pflegeformel.\r\n\r\nAnwendungsbereiche:\r\nHygienische und chirurgische Händedesinfektion zum Einreiben – unabhängig von Waschbecken und Wasser.', 2),

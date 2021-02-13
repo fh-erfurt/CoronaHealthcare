@@ -36,6 +36,16 @@ if($actionName === 'logout')
 	$actionName = 'start';
 	$controllerName = 'pages';
 }
+else if(isset($_COOKIE['userId']))
+{
+	$error = true;
+	$user = \app\models\Profile::findOne('email = \'' . $_COOKIE['userId'] . '\' AND password = \''. $_COOKIE['password'] . '\'' );
+        if (isset($user))
+        {
+                $error = false;
+                $_SESSION['user'] = $user;
+		}
+}
 
 // generate the correct controller path and check file exists?
 $controllerPath = CONTROLLERSPATH.$controllerName.'_controller.php';

@@ -21,43 +21,56 @@
         <div class="data"> 
         <div class="profiledata">
             
-            <p><label for="email">E-Mail Adresse*</label> <? // TODO: infofenster, dass man sich damit anmelden wird // ?></p>
-            <p><input id="email" onchange="checkEnableButton()" type="text" name="email" placeholder="E-Mail Adresse..." value="<?=htmlspecialchars($_POST['email'] ?? '')?>"/></p>
+            <p><label for="email">E-Mail Adresse*</label></p>
+            <p><input id="email" type="text" name="email" placeholder="E-Mail Adresse..." value="<?=htmlspecialchars($_POST['email'] ?? '')?>"/></p>
             
             <p><label for="password">Passwort*</label></p>
-            <p><input id="password" onchange="checkEnableButton()" type="password" name="password" placeholder="Passwort..." /></p>
+            <p><input id="password" type="password" name="password" placeholder="Passwort..." /></p>
             
             <p><label for="firstname">Vorname*</label></p>
-            <p><input id="firstname" onchange="checkEnableButton()" type="text" name="firstname" placeholder="Vorname..." value="<?=htmlspecialchars($_POST['firstname'] ?? '')?>"/></p>
+            <p><input id="firstname" type="text" name="firstname" placeholder="Vorname..." value="<?=htmlspecialchars($_POST['firstname'] ?? '')?>"/></p>
             
             <p><label for="lastname">Nachname*</label></p>
-            <p><input id="lastname" onchange="checkEnableButton()" type="text" name="lastname" placeholder="Nachname..." value="<?=htmlspecialchars($_POST['lastname'] ?? '')?>"/></p>
+            <p><input id="lastname" type="text" name="lastname" placeholder="Nachname..." value="<?=htmlspecialchars($_POST['lastname'] ?? '')?>"/></p>
             <p>
             <p><label for="phone">Telefonnummer</label></p>
-            <p><input id="phone" onchange="checkEnableButton()" type="text" name="phone" placeholder="Telefonnummer(optional)..." value="<?=htmlspecialchars($_POST['phone'] ?? '')?>"/></p>
+            <p><input id="phone" type="text" name="phone" placeholder="Telefonnummer(optional)..." value="<?=htmlspecialchars($_POST['phone'] ?? '')?>"/></p>
             </div>
             <div class="adressdata">           
             <h3>Adressdaten</h3>
             <p>
             <label for="city">Stadtname</label></p>
-            <p><input id="city" onchange="checkEnableButton()" type="text" name="city" placeholder="Stadtname.." value="<?=htmlspecialchars($_POST['city'] ?? '')?>"/></p>
+            <p><input id="city" type="text" name="city" placeholder="Stadtname.." value="<?=htmlspecialchars($_POST['city'] ?? '')?>"/></p>
             <p><label for="street">Straßenname</label></p>
-            <p><input id="street" onchange="checkEnableButton()" type="text" name="street" placeholder="Straßenname..." value="<?=htmlspecialchars($_POST['street'] ?? '')?>"/></p>
+            <p><input id="street" type="text" name="street" placeholder="Straßenname..." value="<?=htmlspecialchars($_POST['street'] ?? '')?>"/></p>
             <p><label for="number">Hausnummer</label></p>
-            <p><input id="number" onchange="checkEnableButton()" type="text" name="number" placeholder="Hausnummer..." value="<?=htmlspecialchars($_POST['number'] ?? '')?>"/></p>
+            <p><input id="number" type="text" name="number" placeholder="Hausnummer..." value="<?=htmlspecialchars($_POST['number'] ?? '')?>"/></p>
             <p><label for="zip">Postleitzahl</label></p>
-            <p><input id="zip" onchange="checkEnableButton()" type="text" name="zip" placeholder="Postleitzahl..." value="<?=htmlspecialchars($_POST['zip'] ?? '')?>"/></p>
+            <p><input id="zip" type="text" name="zip" placeholder="Postleitzahl..." value="<?=htmlspecialchars($_POST['zip'] ?? '')?>"/></p>
             
             
             </div></div>
-            <input type="submit" title="Bitte geben sie überall ihre Informationen ein, bevor sie das Formular absenden" disabled="true"  id="submitButton" name="submit" value="Konto erstellen" />
+            <input type="submit"  id="submitButton" name="submit" value="Konto erstellen" />
         </form>
     </div>
 <?php endif; ?>
 
 
 <script>
-
+window.onload=function(){
+    document.getElementById("submitButton").disabled = true;
+    var button = document.getElementById('submitButton');
+    button.title = 'Bitte geben sie überall ihre Informationen ein, bevor sie das Formular absenden';
+    document.getElementById("email").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("password").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("firstname").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("lastname").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("phone").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("city").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("street").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("number").onkeyup = function() { checkEnableButton(); }
+    document.getElementById("zip").onkeyup = function() { checkEnableButton(); }
+}
 function checkEnableButton() {
 	 if(document.getElementById("email").value===""
         || document.getElementById("password").value===""

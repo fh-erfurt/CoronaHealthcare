@@ -25,14 +25,18 @@ class LoginController extends \app\core\Controller
             $user = \app\models\Profile::findOne('email = \'' . $userEmail . '\' AND password = \''. $userPassword . '\'' );
             if (isset($user))
             {
-                    $error = false;
-                    $_SESSION['user'] = $user;
-                    if($_SESSION['wantedToOrder'] == 'yes')
-                    {
-                        unset($_SESSION['wantedToOrder']);
-                        $this->redirect('index.php?c=shop&a=order');
-                    }
-                    $this->redirect('index.php?c=pages&a=profile');
+                if($_POST['rememberMe'] == true)
+                {
+                    rememberMe($userEmail,$userPassword);
+                }
+                $error = false;
+                $_SESSION['user'] = $user;
+                if($_SESSION['wantedToOrder'] == 'yes')
+                {
+                    unset($_SESSION['wantedToOrder']);
+                    $this->redirect('index.php?c=shop&a=order');
+                }
+                $this->redirect('index.php?c=pages&a=profile');
             }
             else 
             {

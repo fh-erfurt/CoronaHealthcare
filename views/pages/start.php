@@ -24,7 +24,15 @@
             </p>
                  
         </div>
-        <aside>RSS Feed in PHP einbinden</aside>
+        <aside>
+        <?php
+        $rss = simplexml_load_file('https://www.rki.de/SiteGlobals/Functions/RSSFeed/RSSGenerator.xml;jsessionid=79D9903F3ECFDFED4FCE810B6E43438A.internet101?nn=2375210');
+        echo '<h4>'. $rss->channel->title . '</h4>';
+        foreach ($rss->channel->item as $item) {
+        echo '<h4><a href="'. $item->link .'">' . $item->title . "</a></h4>";
+        echo "<p>" . $item->description . "</p>";
+        }?>
+        </aside>
     </div>
 </body>
 

@@ -1,13 +1,19 @@
-<br>
-Das Produkt wurde zu ihrem Warenkorb hinzugefügt!
+<html>
+<!DOCTYPE html>
+<html lang="de">
 
-Wollen Sie weiter einkaufen oder zur gleich bestellen?
+<head>
+    <meta charset=UTF-8>
+</head>
 
-<br><br><br>
+<body>
+    <div class="addProduct">
+        <p>
+            Das Produkt wurde zu ihrem Warenkorb hinzugefügt!
+            Wollen Sie weiter einkaufen oder gleich bestellen?</p>
+        <div class="addProductButton"><button class="toShop"><a href="index.php?c=shop&a=shop">weiter einkaufen</a></div>
+        <div class="addProductButton"><button class="toShoppingcart"><a href="index.php?c=shop&a=shoppingcart">bestellen</a></div>
+    </div>
+</body>
 
-<div >
-    <a style="color:black;" href="index.php?c=shop&a=shoppingcart">Zum Einkaufswagen</a>
-    ------  
-    <a style="color:black;" href="index.php?c=shop&a=shop">Zum Shop</a>
-
-</div>
+</html>

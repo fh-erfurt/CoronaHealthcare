@@ -253,11 +253,11 @@ footer {
 .columnShop {
     display: inline;
     float: left;
-    width: 22%;
-    padding: 0.4%;
+    width: 20%;
+    padding: 1.5%;
 }
 
-.test {
+.products {
     padding-left: 15%;
     padding-top: 0.5%;
 }
@@ -266,8 +266,10 @@ footer {
     padding: 3%;
     text-align: center;
     background-color: #f1f1f1;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .productCard img {
@@ -278,6 +280,8 @@ footer {
 .productCard p {
     color: black;
     font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .productCard button,
@@ -306,13 +310,12 @@ footer {
 
 /*register.php, login.php*/
 
-
-/*.error,
+.error,
 .error-message {
     margin: 15px;
     color: rgb(189, 0, 0);
     font-size: 17px;
-}*/
+}
 
 .data {
     display: flex;
@@ -389,6 +392,89 @@ input[type=submit]:hover {
 
 input[type=submit]:disabled {
     background-color: rgb(187, 187, 187);
+}
+
+
+/*shoppingcart.php*/
+
+.shoppingcart p {
+    font-size: 20px;
+}
+
+.shoppingcart h3 {
+    font-size: 25px;
+}
+
+.gridcontainer {
+    display: grid;
+}
+
+.itemList {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.itemList p {
+    font-size: 15px;
+}
+
+.itemList .img {
+    height: 200px;
+    width: 200px;
+}
+
+.shoppingcart .submitButton {
+    width: 15%;
+    padding: 1%;
+    border: none;
+    background-color: rgb(36, 130, 50);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.shoppingcart .submitButton:hover {
+    background: rgb(44, 47, 51);
+}
+
+.cancle {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cancle i {
+    font-size: 25px;
+    color: rgb(36, 130, 50);
+}
+
+
+/*addProduct.php*/
+
+.addProduct p {
+    font-size: 20px;
+}
+
+.addProduct button {
+    width: 15%;
+    padding: 1%;
+    border: none;
+    background-color: rgb(36, 130, 50);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.addProductButton {
+    padding-bottom: 1%;
+}
+
+.addProduct button:hover {
+    background: rgb(44, 47, 51);
 }
 
 @media only screen and (max-width:1100px) {

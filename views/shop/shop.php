@@ -42,7 +42,7 @@
         </div>
 
 
-        <div class = "test">
+        <div class = "products">
         <?php foreach ($products as $key => $value) : ?>
             <div class="columnShop">
                 <div class="productCard">

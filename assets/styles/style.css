@@ -73,18 +73,28 @@ a {
 
 .start p {
     padding: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
     font-size: 20px;
     text-align: left;
+}
+
+.aside p {
+    font-size: 25;
 }
 
 .aside {
     background: rgb(4, 15, 15);
     padding: 1em;
     color: rgb(224, 224, 224);
-    width: 70%;
+    width: 100%;
     height: 650px;
     overflow-y: scroll;
     margin-top: 0.75%;
+}
+
+.start img {
+    width: 70%;
 }
 
 
@@ -98,13 +108,21 @@ a {
     flex-grow: 0.5;
 }
 
-.right {
+.login {
+    flex-grow: 0.125;
+}
+
+.symbol {
     flex-grow: 0.25;
 }
 
-.right p,
-.right a {
+.login p,
+.login a {
     font-size: 20px;
+}
+
+.symbol a {
+    font-size: 30px;
 }
 
 footer p,
@@ -118,19 +136,19 @@ footer p,
     margin-right: 5px;
 }
 
-.img {
-    height: 200px;
-    width: 200px;
+.logo img {
+    height: 175px;
+    width: 175px;
 }
 
 .symbol {
     align-items: flex-end;
     align-self: flex-end;
-    flex-direction: column;
-    padding-right: 50px;
-    padding-bottom: 30px;
+    flex-direction: row;
     justify-content: space-between;
     font-size: 35px;
+    padding-right: 2%;
+    padding-bottom: 0.5%;
 }
 
 nav {
@@ -187,14 +205,13 @@ nav {
 }
 
 .search input[type=text] {
-    width: 60%;
+    width: 50%;
     border: none;
     padding: 5px;
 }
 
 .search {
-    padding: 30px;
-    font-size: 20px;
+    padding: 4%;
 }
 
 .search button[type=submit] {
@@ -251,6 +268,11 @@ footer {
     background-color: #f1f1f1;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.productCard img {
+    width: 200px;
+    height: 200px;
 }
 
 .productCard p {
@@ -371,94 +393,138 @@ input[type=submit]:disabled {
 
 @media only screen and (max-width:1100px) {
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
-    img {
-        height: 120px;
-        width: 120px;
+    /*layout.php*/
+    .login p,
+    .login a {
+        font-size: 18px;
     }
-    .topbar,
-    footer,
-    .login,
-    .product_card p,
-    .product_card button {
-        font-size: 15px;
-    }
-    .symbol {
+    .symbol a {
         font-size: 25px;
     }
-    nav {
-        font-size: 20px;
-    }
-    p,
-    br,
-    button,
     .dropbtn,
+    .dropdown-content a,
     .buttonInformation,
     .buttonUeberUns {
         font-size: 20px;
+    }
+    .logo img {
+        height: 100px;
+        width: 100px;
+    }
+    footer p {
+        font-size: 17px;
+    }
+    /*start.php*/
+    .aside h4,
+    .aside p {
+        font-size: 15px;
+    }
+    .aside {
+        width: 125%;
+    }
+    .start p {
+        font-size: 17px;
+    }
+    /*shop.php*/
+    .product_card p,
+    .product_card button {
+        font-size: 10px;
     }
 }
 
 @media only screen and (max-width:700px) {
     h1 {
-        font-size: 25px;
+        font-size: 16px;
     }
-    img {
-        height: 75px;
-        width: 75px;
+    /*layout.php*/
+    .login p,
+    .login a {
+        font-size: 12.5px;
     }
-    .topbar,
-    footer,
-    .login,
+    .symbol a {
+        font-size: 17px;
+    }
+    .search input[type=text] {
+        font-size: 10px;
+    }
+    .search button[type=submit] {
+        font-size: 13px;
+    }
+    .dropbtn,
+    .dropdown-content a,
+    .buttonInformation,
+    .buttonUeberUns {
+        font-size: 17.5px;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    /*start.php*/
+    .aside h4,
+    .aside p {
+        font-size: 12.5px;
+    }
+    .aside {
+        width: 160%;
+    }
+    .start p {
+        font-size: 15px;
+    }
+    /*shop.php*/
     .product_card p,
     .product_card button {
         font-size: 10px;
-    }
-    .symbol {
-        font-size: 15px;
-    }
-    nav {
-        font-size: 15px;
-    }
-    p,
-    br,
-    button,
-    .search,
-    .dropbtn,
-    .buttonInformation,
-    .buttonUeberUns {
-        font-size: 13px;
     }
 }
 
 @media only screen and (max-width:420px) {
     h1 {
+        font-size: 0px;
+    }
+    /*layout.php*/
+    .login p,
+    .login a {
+        font-size: 10px;
+    }
+    .symbol a {
         font-size: 13px;
     }
-    .topbar,
-    footer,
-    .login,
+    .search input[type=text] {
+        font-size: 10px;
+    }
+    .search button[type=submit] {
+        font-size: 13px;
+    }
+    .dropbtn,
+    .dropdown-content a,
+    .buttonInformation,
+    .buttonUeberUns {
+        font-size: 15px;
+    }
+    .logo img {
+        height: 0px;
+        width: 0px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    /*start.php*/
+    .aside h4,
+    .aside p {
+        font-size: 10px;
+    }
+    .aside {
+        width: 250%;
+    }
+    /*shop.php*/
     .product_card p,
     .product_card button {
         font-size: 7.5px;
-    }
-    .symbol {
-        font-size: 10px;
-    }
-    nav {
-        font-size: 10px;
-    }
-    p,
-    br,
-    button,
-    .dropbtn,
-    .buttonInformation,
-    .buttonUeberUns {
-        font-size: 10px;
-    }
-    img {
-        height: 0px;
-        width: 0px;
     }
 }

@@ -24,11 +24,10 @@
 		</form>
 	</div>
 
-	<div class="right">
+	<div class="login">
 		<? if(isset($_SESSION['user'])) : ?>
-		<div class="login">
 			<p>Willkommen <?= $_SESSION['user']['firstname'] ?>!
-				<a href="index.php?c=login&a=logout">Abmelden |</a>
+				<a href="index.php?c=login&a=logout">Abmelden</a>
 			</p>
 			<? else: ?>
 			<a href="index.php?c=login&a=login">Anmelden |</a>
@@ -43,9 +42,8 @@
 			<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 			<? endif; ?>
 			<a href="index.php?c=shop&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
-			<i title="Produkte im Warenkorb" style="color:white;"><?= isset($_SESSION['shoppingcart']) ? count($_SESSION['shoppingcart']) : '0' ?></i>
+			<a> <i title="Produkte im Warenkorb" style="color:white;"><?= isset($_SESSION['shoppingcart']) ? count($_SESSION['shoppingcart']) : '0' ?></i></a>
 		</div>
-	</div>
 </header>
 
 <nav>
@@ -75,7 +73,7 @@
 		</main>
 	</div>
 	<footer>
-		<p>&copy; Team CoronaHealthcare || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a></p>
+		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a></p>
 	</footer>
 </body>
 

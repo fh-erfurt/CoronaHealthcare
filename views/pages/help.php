@@ -12,8 +12,7 @@
             <h2>FAQ</h2>
                 <p>
                     <strong>Gibt es Lieferengpässe durch die Pandemie?</strong><br><br>
-            
-                
+                            
                     Wir arbeiten seit Jahren mit zuverlässigen Lieferanten Hand in Hand und haben ein zuverlässiges Netzwerk für den Zufluss neuer Ware.
                     Die Produktion der eigenen Marken läuft zudem auf Hochtouren.
                 </p>
@@ -28,8 +27,7 @@
                
                 <p> 
                     <strong>Haben Sie einen Vor-Ort-Verkauf?</strong><br><br>
-            
-                
+                            
                     Einen Vor-Ort-Verkauf bieten wir zum jetzigen Zeitpunkt noch nicht an. Kleinstmengen können über unseren Shop oder telefonisch
                     über den Verkauf erworben werden. Hierfür melden Sie sich gern über die Vermittlung bei unserem Haus.
                 </p>
@@ -42,8 +40,7 @@
                 </p>
                
                 <p>
-                    <strong>Welche Erfahrung haben Sie im Gesundheitswesen und mit dem Handel von Präventivmaterial?</strong><br>
-
+                    <strong>Welche Erfahrung haben Sie im Gesundheitswesen und mit dem Handel von Präventivmaterial?</strong><br><br>
                 
                     Unser Haus handelt seit vielen Jahren mit Hygieneartikeln, von zertifizierten Lieferanten und auch aus Eigenproduktion.
                     Unsere Herstellung ist geprüft und durch den TÜV Rheinland zertifiziert. Wir legen großen Wert auf Qualität und überprüfen die 
@@ -52,14 +49,12 @@
                
                 <p>
                     <strong>Welches Rückgaberecht habe ich?</strong><br><br>
-
                 
                     Bei unseren Produkten gelten die gesetzlichen Rückgaberechte.
                 </p>
                
                 <p>
                     <strong>In welchem Liefergebiet agieren Sie?</strong><br><br>
-
                
                     Wir liefern Deutschlandweit. Verbrauchsmaterialien, die keine besondere Kühlung benötigen, können Weltweit versandt werden.
                 </p>

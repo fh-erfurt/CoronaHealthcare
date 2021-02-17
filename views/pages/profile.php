@@ -12,16 +12,26 @@
     <p>Nachname : <?=$userLastname?></p>
     <p>Emailadresse : <?=$userEmail?></p>
     <p>Telefonnummer : <?=$userPhone?></p>
+    <div class="form-container">
+    <form action="index.php?c=pages&a=editProfile" method="post">
+        <button>Profildaten bearbeiten</button>
+    </form>
+    <form action="index.php?c=pages&a=changePassword" method="post">
+    <button>Passwort ändern</button>
+    </form>
+    </div>
     <br />
     <br>
 </div>
 <div>
     <h1>Bestellverlauf</h1>
         <?php foreach ($orders as $key => $order): ?>
-            <div class="column"> 
-                <div class="product_card">
+            <div class="columnShop"> 
+                <div class="productCard">
                     Bestellnummer: <?=$order['id']?> <br>
-                    Bestellt am: <?=$order['createdAt']?> <br>
+                    Gesamtpreis: <?=$order['fullprice']?> € <br>
+                    Zahlungsart: <?=$order['paymethod']?> <br>
+                    Bestellt am: <?=date("d.m.Y", strtotime($order['createdAt']))?> <br>
                     Status: <?=$order['status']?> <br>
                     <br>
                     Bestellte Produkte

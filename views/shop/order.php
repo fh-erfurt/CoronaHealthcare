@@ -8,12 +8,13 @@
         <hr>
     <?php endforeach ?>
     <hr>
-    Gesamtkosten: <?=$fullPrice ?>
+    Gesamtkosten: <?=number_format($fullPrice, 2, ',', '') ?> €
+    <input type="hidden" id="fullprice" name="fullprice" value="<?=$fullPrice?>">
     <hr><hr>
     <br>
     Zahlungsart wählen   
-    <select name="paymentMethod" id="paymentMethod">
-        <option value="Null">Bitte wählen..</option>
+    <select name="paymethod" id="paymethod">
+        <option value="Rechnung">Rechnung</option>
         <option value="Paypal">Paypal</option>
         <option value="SEPA">SEPA</option>
         <option value="Bitcoin">Bitcoin</option>

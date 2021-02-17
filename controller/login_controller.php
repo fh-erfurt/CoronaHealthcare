@@ -85,12 +85,12 @@ class LoginController extends \app\core\Controller
 
             if($firstname === null || mb_strlen($firstname) < 2 || mb_strlen($firstname) > 45)
             {
-                $errors['firstname'] = 'Der Vorname entspricht nicht den Richtlinien, bitte geben Sie mindenstens 2 und maximale 45 Zeichen an.';
+                $errors['firstname'] = 'Der Vorname entspricht nicht den Richtlinien, bitte geben Sie mindestens 2 und maximale 45 Zeichen an.';
             }
 
             if($lastname === null || mb_strlen($lastname) < 2 || mb_strlen($lastname) > 45)
             {
-                $errors['lastname'] = 'Der Nachname entspricht nicht den Richtlinien, bitte geben Sie mindenstens 2 und maximale 45 Zeichen an.';
+                $errors['lastname'] = 'Der Nachname entspricht nicht den Richtlinien, bitte geben Sie mindestens 2 und maximale 45 Zeichen an.';
             }
 
 

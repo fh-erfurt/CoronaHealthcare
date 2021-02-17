@@ -22,10 +22,13 @@
             <form action="index.php?c=shop&a=deleteProduct" method="post">
             <input type="hidden" name="productID" value="<?=$key?>">
             <button class="cancle"><i class="fa fa-trash"></i></button></div>
+            </form>
              <?php endforeach ?>
              </div>
-    <p>Gesamtkosten: <?=$fullPrice ?> €</p>
-    <button class="submitButton"><a href="index.php?c=shop&a=order">Zum Bestellvorgang</a></button>
+    <p>Gesamtkosten: <?=number_format($fullPrice, 2, ',', '') ?> €</p>
+    <form action="index.php?c=shop&a=order" method="post">
+        <input type="submit" class="submitButton" value="Zum Bestellvorgang">
+    </form>
 
     <?php else: ?>
     <p>Ihr Warenkorb ist leer.

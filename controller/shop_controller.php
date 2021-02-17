@@ -172,15 +172,16 @@ class ShopController extends \app\core\Controller
     {
         $user = $_SESSION['user'];
         $products = $_SESSION['shoppingcart'];
-
         $orderData = array(
-            'profile' => $user['id']
+            'profile' => $user['id'],
+            'paymethod' => $_POST['paymethod'],
+            'fullprice' => $_POST['fullprice'],
         );
         $newOrder = new \app\models\Order($orderData);
         $newOrder->insert($errors);
         $orderID = \app\models\Order::findLastEntryPerID('id');
         $orderHistoryDate = array(
-            'change' => 'Offen',
+            'change' => 'Bezahlung ausstehend',
             'order'  => $orderID
         );
         $newOrderHistory = new \app\models\OrderHistory($orderHistoryDate);

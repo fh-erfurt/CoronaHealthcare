@@ -94,7 +94,7 @@ abstract class BaseModel
         return false;
     }
 
-    protected function update(&$errors)
+    public function update(&$errors)
     {
         $db = $GLOBALS['db'];
 
@@ -106,13 +106,11 @@ abstract class BaseModel
             {
                 if($this->data[$key] !== null)
                 {
-                    $sql .= $key . ' = ' . $db->quote($this->data[$key].',');
+                    $sql .= $key . ' = ' . $db->quote($this->data[$key]) .',';
                 }
             }
-            
             $sql = trim($sql, ',');
             $sql .= ' WHERE id = ' .$this->data['id'];
-
             $statement = $db->prepare($sql);
             $statement->execute();
             return true;

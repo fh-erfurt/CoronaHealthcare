@@ -27,14 +27,13 @@
 	<div class="login">
 		<? if(isset($_SESSION['user'])) : ?>
 			<p>Willkommen <?= $_SESSION['user']['firstname'] ?>!
-				<a href="index.php?c=login&a=logout">Abmelden</a>
+				<a onclick="return confirm('Sind sie sicher, dass Sie sich abmelden möchten?')" href="index.php?c=login&a=logout">| Abmelden</a>
 			</p>
 			<? else: ?>
 			<a href="index.php?c=login&a=login">Anmelden |</a>
 			<a href="index.php?c=login&a=register">Registrieren</a>
 			<? endif; ?>
 		</div>
-
 		<div class="symbol">
 			<? if(!isset($_SESSION['user'])) : ?>
 			<a href="index.php?c=login&a=login"><i class="fa fa-user"></i></a>
@@ -60,7 +59,6 @@
 			<a href="index.php?c=shop&a=shop&categoryId=5">Hautreinigung</a>
 		</div>
 	</div>
-
 	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
 	<button class="buttonUeberUns"><a href="index.php?c=pages&a=about">Über uns</a></button>
 </nav>

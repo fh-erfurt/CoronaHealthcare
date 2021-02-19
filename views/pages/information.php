@@ -57,7 +57,7 @@
                     Langzeitfolgen wurden bisher nicht als einheitliches Phänomen betrachtet, jedoch traten diverse Krankheitsbilder auf, die sowohl zeitversetzt, als auch parallel in verschiedenen
                     Ausprägungstufen auftraten.<br>
                     Die bisherigen Erkentnisse lassen zum Beispiel organische Langzeitfolgen nach Intensivbehandlungen beobachten. Müdigkeitserscheinungen, Gedächtnisverlust, Merk- und Wortfindungsstörungen
-                    kamen vereinzelt auch nach milden Verläufen zum Vorschein. Über Lnagzeitfolgen nach sehr milden Verläufen ist derzeit wenig dokumentiert und bekannt.<br><br>
+                    kamen vereinzelt auch nach milden Verläufen zum Vorschein. Über Langzeitfolgen nach sehr milden Verläufen ist derzeit wenig dokumentiert und bekannt.<br><br>
                 </p>
 
                 <p>
@@ -67,7 +67,7 @@
                 <p>
                     Das Virus verbreitet sich insbesondere durch Tröpfcheninfektion, aber auch durch Aerosolinfektion von Mensch zu Mensch. Die direkte Übertragung durch diese beiden Hauptübertragungswege
                     von Tieren zum Menschen ist bisher nicht belegt.<br>
-                    Die Verbreitung ist laut den <a href="https://www.rki.de/SharedDocs/FAQ/NCOV2019/gesamt.html" style="color: green">Informationen des Robert Koch Instituts</a> schlechter im Sommer. Durch höhere Temperaturen und die stärke UV-Strahlung ist das Virus in seiner Verbreitung gehemmt.
+                    Die Verbreitung ist laut den <a href="https://www.rki.de/SharedDocs/FAQ/NCOV2019/gesamt.html">Informationen des Robert Koch Instituts</a> schlechter im Sommer. Durch höhere Temperaturen und die stärke UV-Strahlung ist das Virus in seiner Verbreitung gehemmt.
                     Diese Saisonalität wurde bereits bei anderen humanen Coronaviren beobachtet.
                 </p>
         </div>

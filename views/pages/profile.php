@@ -6,8 +6,9 @@
     <title>Mein Profil</title>
 </head>
 <body>
-<div>
-    <h1>Profilübersicht</h1>
+<div class="profile">
+    <div class="profile-overview">
+    <h2>Profilübersicht</h2>
     <p>Vorname : <?=$userFirstname?></p>
     <p>Nachname : <?=$userLastname?></p>
     <p>Emailadresse : <?=$userEmail?></p>
@@ -20,11 +21,11 @@
     <button>Passwort ändern</button>
     </form>
     </div>
-    <br />
-    <br>
 </div>
-<div>
-    <h1>Bestellverlauf</h1>
+</div>
+
+<div class="order-history">
+    <h2>Bestellverlauf</h2>
         <?php foreach ($orders as $key => $order): ?>
             <div class="columnShop"> 
                 <div class="productCard">

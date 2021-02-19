@@ -402,19 +402,19 @@ footer {
 
 .data {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    text-align: center;
+    flex-direction: row;
     padding: 1%;
 }
 
 .adressdata {
-    flex-grow: 1;
+    flex: 50%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .profiledata {
-    flex-grow: 1;
+    flex: 50%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -560,11 +560,14 @@ input[type=submit]:disabled {
     background: rgb(44, 47, 51);
 }
 
+
+/*profile.php*/
+
 @media only screen and (max-width:1100px) {
-    h1 {
+    /*layout.php*/
+    header h1 {
         font-size: 30px;
     }
-    /*layout.php*/
     .login p,
     .login a {
         font-size: 18px;
@@ -621,13 +624,19 @@ input[type=submit]:disabled {
     .product button {
         width: 60%;
     }
+    /*register.php*/
+    .data {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (max-width:700px) {
-    h1 {
+    /*layout.php*/
+    header h1 {
         font-size: 16px;
     }
-    /*layout.php*/
     .login p,
     .login a {
         font-size: 12.5px;
@@ -693,10 +702,10 @@ input[type=submit]:disabled {
 }
 
 @media only screen and (max-width:420px) {
-    h1 {
+    /*layout.php*/
+    header h1 {
         font-size: 0px;
     }
-    /*layout.php*/
     .login p,
     .login a {
         font-size: 10px;
@@ -749,6 +758,10 @@ input[type=submit]:disabled {
     /*product.php*/
     .product p,
     .product button {
+        font-size: 15px;
+    }
+    /*login.php*/
+    input[type=submit] {
         font-size: 15px;
     }
 }

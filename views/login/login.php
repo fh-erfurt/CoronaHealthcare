@@ -8,7 +8,7 @@
 
 <form action="<?=$_SERVER['PHP_SELF'].'?c=login&a=login';?>" method="post">
     <div class="loginForm">
-    <h1>Login</h1>
+    <h2>Login</h2>
     <label for="loginName"></label>
     <input type="text" name="validationEmail" id="loginName" placeholder="Ihre Emailadresse..." value="<?=$_POST['validationEmail'] ?? ''?>">
     <br><br>

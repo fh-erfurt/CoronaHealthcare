@@ -67,9 +67,15 @@
                 <p>
                     Das Virus verbreitet sich insbesondere durch Tröpfcheninfektion, aber auch durch Aerosolinfektion von Mensch zu Mensch. Die direkte Übertragung durch diese beiden Hauptübertragungswege
                     von Tieren zum Menschen ist bisher nicht belegt.<br>
-                    Die Verbreitung ist laut den <a href="https://www.rki.de/SharedDocs/FAQ/NCOV2019/gesamt.html">Informationen des Robert Koch Instituts</a> schlechter im Sommer. Durch höhere Temperaturen und die stärke UV-Strahlung ist das Virus in seiner Verbreitung gehemmt.
+                    Die Verbreitung ist laut den <a href="https://www.rki.de/SharedDocs/FAQ/NCOV2019/gesamt.html">Informationen des Robert Koch Instituts</a> schlechter im Sommer. Durch höhere Temperaturen und 
+                    die stärke UV-Strahlung ist das Virus in seiner Verbreitung gehemmt.
                     Diese Saisonalität wurde bereits bei anderen humanen Coronaviren beobachtet.
                 </p>
+                
+                <p style="font-size:10pt">
+                    Quelle: <a href="https://www.zusammengegencorona.de/">www.zusammengegencorona.de</a>
+                </p>
+
         </div>
 
     </body>

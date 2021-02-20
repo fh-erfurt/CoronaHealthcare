@@ -12,7 +12,7 @@
             Das Produkt wurde zu ihrem Warenkorb hinzugefügt!
             Wollen Sie weiter einkaufen oder gleich bestellen?</p>
         <form action="index.php?c=shop&a=shop" method="Post">
-            <div class="addProductButton"><button class="toShoppingcart"><a>Weiter Einkaufen</a></button></div>
+            <div class="addProductButton"><button class="toShoppingcart"><a>Weiter einkaufen</a></button></div>
         </form>
         <form action="index.php?c=shop&a=shoppingcart" method="Post">
             <div class="addProductButton"><button class="toShoppingcart"><a>Bestellen</a></button></div>

@@ -66,7 +66,8 @@ a {
 
 .impressum p,
 .help p,
-.information p {
+.information p,
+.information h3 {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10px;
@@ -81,6 +82,10 @@ a {
 
 .information a {
     color: green;
+}
+
+.information .source p {
+    font-size: 15px;
 }
 
 
@@ -322,16 +327,6 @@ footer {
     background: rgb(44, 47, 51);
 }
 
-.form-container form,
-.form-container form div {
-    display: inline;
-}
-
-.form-container button {
-    display: inline;
-    vertical-align: middle;
-}
-
 
 /*product.php*/
 
@@ -563,6 +558,160 @@ input[type=submit]:disabled {
 
 /*profile.php*/
 
+.profile {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 2.5%;
+}
+
+.profile p {
+    font-size: 20px;
+}
+
+.profile-overview {
+    flex: 40%;
+    float: left;
+}
+
+.order-history {
+    margin-right: 1.5%;
+    flex: 30%;
+    float: right;
+}
+
+.profile-form button {
+    width: 40%;
+    padding: 1%;
+    border: none;
+    background-color: rgb(36, 130, 50);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.profile-form button:hover {
+    background: rgb(44, 47, 51);
+}
+
+.profile-form form {
+    padding: 1%;
+}
+
+.one-order {
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.one-order p {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.order-border {
+    border: 2px solid rgb(44, 47, 51);
+    padding: 1%;
+    border-radius: 12px;
+}
+
+
+/*success.php*/
+
+.success p,
+.success a {
+    font-size: 20px;
+    text-align: center;
+}
+
+.success a {
+    color: rgb(36, 130, 50);
+}
+
+.success {
+    margin-top: 5%;
+}
+
+
+/*order.php*/
+
+.order {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.order p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.order-list {
+    flex: 60%;
+    margin-left: 10%;
+}
+
+.order-list h3 {
+    width: 75%;
+    font-size: 22px;
+}
+
+.order-list p {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 17px;
+}
+
+.order-info {
+    flex: 60%;
+}
+
+.order-list-border {
+    width: 75%;
+    border: 3px solid rgb(44, 47, 51);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+
+.pay-select select {
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(36, 130, 50);
+    color: rgb(255, 255, 255);
+}
+
+.paymethod option {
+    background-color: rgb(36, 130, 50);
+}
+
+.order button[type=submit] {
+    width: 40%;
+    padding: 1%;
+    border: none;
+    background-color: rgb(36, 130, 50);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.order button[type=submit]:hover {
+    background: rgb(44, 47, 51);
+}
+
 @media only screen and (max-width:1100px) {
     /*layout.php*/
     header h1 {
@@ -596,8 +745,7 @@ input[type=submit]:disabled {
     .aside {
         width: 125%;
     }
-    .start p,
-    .information p {
+    .start p {
         font-size: 17px;
     }
     /*shop.php*/
@@ -630,10 +778,24 @@ input[type=submit]:disabled {
         margin-left: 5%;
         margin-right: 10%;
     }
+    /*order.php*/
+    .order {
+        flex-direction: column;
+    }
+    .order-list {
+        width: 60%;
+    }
+    .order-info {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:700px) {
     /*layout.php*/
+    header,
+    nav {
+        width: 100%;
+    }
     header h1 {
         font-size: 16px;
     }
@@ -657,8 +819,8 @@ input[type=submit]:disabled {
         font-size: 17.5px;
     }
     .logo img {
-        height: 50px;
-        width: 50px;
+        height: 0;
+        width: 0;
     }
     footer p {
         font-size: 15px;
@@ -671,8 +833,7 @@ input[type=submit]:disabled {
     .aside {
         width: 160%;
     }
-    .start p,
-    .information p {
+    .start p {
         font-size: 15px;
     }
     /*shop.php*/
@@ -699,12 +860,32 @@ input[type=submit]:disabled {
     .product {
         flex-direction: column;
     }
+    /*profile.php*/
+    .profile {
+        flex-direction: column;
+    }
+    /*order.php*/
+    .order-list {
+        width: 100%;
+        margin: 0;
+    }
+    .order-list-border {
+        width: 99%;
+    }
+    .order-info {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:420px) {
     /*layout.php*/
     header h1 {
         font-size: 0px;
+    }
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .login p,
     .login a {
@@ -717,7 +898,7 @@ input[type=submit]:disabled {
         font-size: 10px;
     }
     .search button[type=submit] {
-        font-size: 13px;
+        font-size: 15px;
     }
     .dropbtn,
     .dropdown-content a,
@@ -731,6 +912,12 @@ input[type=submit]:disabled {
     }
     footer p {
         font-size: 12px;
+    }
+    .center {
+        width: 30%;
+    }
+    .search button {
+        opacity: 0;
     }
     /*start.php*/
     .aside {
@@ -762,6 +949,23 @@ input[type=submit]:disabled {
     }
     /*login.php*/
     input[type=submit] {
+        font-size: 15px;
+    }
+    /*profile.php*/
+    .profile p {
+        font-size: 15px;
+    }
+    .profile-form button {
+        font-size: 15px;
+    }
+    /*order.php*/
+    .order p,
+    .pay-select select,
+    .order button[type=submit] {
+        font-size: 15px;
+    }
+    /*information.php*/
+    .information p {
         font-size: 15px;
     }
 }

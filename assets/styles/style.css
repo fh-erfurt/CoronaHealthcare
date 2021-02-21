@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    padding-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
 #main {
@@ -257,12 +257,12 @@ footer {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
-    padding: 1em;
+    margin-bottom: 15px;
+    padding: 1%;
     box-shadow: 2px 2px 5px rgb(103, 117, 105);
     background: rgb(4, 15, 15);
     color: rgb(224, 224, 224);
-    width: 10%;
-    height: 500px;
+    width: 12%;
 }
 
 .sidebar p {
@@ -273,31 +273,33 @@ footer {
 .columnShop {
     display: inline;
     float: left;
-    width: 20%;
-    padding: 1.5%;
+    height: 420px;
+    width: 23%;
+    padding: 1.5% 1.5% 1.5% 0;
 }
 
 .products {
-    padding-left: 15%;
+    margin-bottom: 100px;
+    float: right;
+    width: 82%;
     padding-top: 0.5%;
 }
 
 .productCard {
-    padding: 3%;
+    padding: 4%;
     text-align: center;
     background-color: #f1f1f1;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .productCard img {
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
 }
 
 .productCard p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: black;
     font-size: 20px;
     padding-left: 5%;
@@ -483,38 +485,50 @@ input[type=submit]:disabled {
     font-size: 25px;
 }
 
-.gridcontainer {
-    display: grid;
-}
-
 .itemList {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2%;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.itemList p {
-    font-size: 15px;
+.itemList .product-name p {
+    font-size: 18px;
 }
 
-.itemList .img {
+.itemList img {
     height: 200px;
     width: 200px;
+    float: left;
 }
 
-.shoppingcart .submitButton {
+.itemList .product-name {
+    width: 30%;
+}
+
+.itemList .product-price {
+    width: 20%;
+}
+
+.border-itemList {
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.border-itemList button {
     width: 15%;
     padding: 1%;
     border: none;
     background-color: rgb(36, 130, 50);
+    color: white;
     text-align: center;
     cursor: pointer;
     font-size: 20px;
     transition-duration: 0.3s;
 }
 
-.shoppingcart .submitButton:hover {
+.border-itemList button:hover {
     background: rgb(44, 47, 51);
 }
 
@@ -534,6 +548,8 @@ input[type=submit]:disabled {
 
 .addProduct p {
     font-size: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .addProduct button {
@@ -633,10 +649,6 @@ input[type=submit]:disabled {
     color: rgb(36, 130, 50);
 }
 
-.success {
-    margin-top: 5%;
-}
-
 
 /*order.php*/
 
@@ -712,6 +724,13 @@ input[type=submit]:disabled {
     background: rgb(44, 47, 51);
 }
 
+@media only screen and (max-width:1400px) {
+    /*shop.php*/
+    .columnShop {
+        height: 360px;
+    }
+}
+
 @media only screen and (max-width:1100px) {
     /*layout.php*/
     header h1 {
@@ -749,9 +768,25 @@ input[type=submit]:disabled {
         font-size: 17px;
     }
     /*shop.php*/
-    .product_card p,
-    .product_card button {
-        font-size: 10px;
+    .columnShop {
+        width: 30%;
+        height: 300px;
+    }
+    .sidebar {
+        width: 18%;
+        margin-bottom: 30px;
+    }
+    .products {
+        width: 75%;
+    }
+    .productCard p {
+        font-size: 15px;
+    }
+    .productCard button {
+        font-size: 15px;
+    }
+    .sidebar p {
+        font-size: 15px;
     }
     /*about.php*/
     .rowHistory p {
@@ -788,13 +823,38 @@ input[type=submit]:disabled {
     .order-info {
         width: 100%;
     }
+    /*shoppingcart.php*/
+    .itemList img {
+        height: 150px;
+        width: 150px;
+    }
+    .itemList .product-name {
+        width: 50%;
+    }
+    .border-itemList button {
+        width: 30%;
+    }
+    /*addProduct.php*/
+    .addProduct Button {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    /*shop.php*/
+    .columnShop {
+        height: 280px;
+    }
 }
 
 @media only screen and (max-width:700px) {
     /*layout.php*/
-    header,
-    nav {
+    header {
         width: 100%;
+    }
+    nav {
+        margin-left: 0;
+        margin-right: 0;
     }
     header h1 {
         font-size: 16px;
@@ -837,9 +897,18 @@ input[type=submit]:disabled {
         font-size: 15px;
     }
     /*shop.php*/
-    .product_card p,
-    .product_card button {
-        font-size: 10px;
+    .columnShop {
+        width: 46%;
+        height: 260px;
+    }
+    .sidebar {
+        width: 30%;
+    }
+    .products {
+        width: 58%;
+    }
+    .productCard button {
+        font-size: 12.5px;
     }
     /*about.php*/
     .rowHistory p {
@@ -874,6 +943,28 @@ input[type=submit]:disabled {
     }
     .order-info {
         width: 100%;
+    }
+    /*shoppingcart.php*/
+    .itemList img {
+        height: 100px;
+        width: 100px;
+    }
+    .itemList .product-price p {
+        font-size: 17px;
+    }
+    .border-itemList button {
+        width: 50%;
+    }
+    /*addProduct.php*/
+    .addProduct Button {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    /*shop.php*/
+    .columnShop {
+        height: 260px;
     }
 }
 
@@ -924,9 +1015,18 @@ input[type=submit]:disabled {
         width: 400%;
     }
     /*shop.php*/
-    .product_card p,
-    .product_card button {
-        font-size: 7.5px;
+    .columnShop {
+        height: 250px;
+        width: 92%;
+    }
+    .sidebar {
+        width: 45%;
+    }
+    .products {
+        width: 45%;
+    }
+    .productCard button {
+        font-size: 12.5px;
     }
     /*about.php*/
     .rowHistory p {
@@ -967,5 +1067,26 @@ input[type=submit]:disabled {
     /*information.php*/
     .information p {
         font-size: 15px;
+    }
+    /*shoppingcart.php*/
+    .itemList img {
+        height: 0;
+        width: 0;
+    }
+    .cancle i {
+        font-size: 20px;
+    }
+    .itemList .product-name {
+        width: 50%;
+    }
+    .itemList .product-price {
+        width: 30%;
+    }
+    .cancle {
+        width: 20%;
+    }
+    /*addProduct.php*/
+    .addProduct Button {
+        width: 60%;
     }
 }

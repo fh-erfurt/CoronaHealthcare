@@ -12,8 +12,8 @@
         <div class="sidebar">
             <p>
             <form action="index.php?c=shop&a=shop" method="post">
-                 Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?><br><br>
-                 Aktuelle Kategorie:
+                 <p>Anzahl der Produkte: <br><?= $amountOfFilteredProducts ?> von <?= $amountOfAllProducts ?></p>
+                 <p> Aktuelle Kategorie:</p>
                 <select name="categoryId" id="categoryId">
                     <option value="">Alle</option>
                     <?php foreach($categories as $category) : ?>
@@ -33,6 +33,7 @@
                     <?php endforeach; ?>
                          
                 </select>
+
                 <p>Preis bis <?=$_POST['priceMax'] ?? $highestPrice?> €
                 <input name="priceMax" type="range"  min="<?=$lowestPrice?>" max="<?=$highestPrice?>" value="<?=htmlspecialchars($_POST['priceMax'] ?? $highestPrice)?>" class="slider"></p>
                 <p>Preis ab <?=$_POST['priceMin'] ?? $lowestPrice?> €

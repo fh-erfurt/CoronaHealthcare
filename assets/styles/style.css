@@ -726,6 +726,22 @@ input[type=submit]:disabled {
     background: rgb(44, 47, 51);
 }
 
+
+/*doku.php*/
+
+.docu {}
+
+.docu a {
+    color: black;
+}
+
+.table-of-contents {}
+
+.docu img {
+    width: 75%;
+    padding-bottom: 2%;
+}
+
 @media only screen and (max-width:1400px) {
     /*shop.php*/
     .columnShop {

@@ -426,7 +426,7 @@ footer {
 }
 
 .loginForm {
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 .loginForm input[type=text],
@@ -727,7 +727,7 @@ input[type=submit]:disabled {
 }
 
 
-/*doku.php*/
+/*docu.php*/
 
 .docu {}
 
@@ -740,6 +740,29 @@ input[type=submit]:disabled {
 .docu img {
     width: 75%;
     padding-bottom: 2%;
+}
+
+
+/*docu.php*/
+
+.contactForm input[type=text] {
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    width: 30%;
+    border: none;
+    background: #f1f1f1;
+    color: black;
+    font-size: 15px;
+}
+
+.contactForm input[type=text]:focus {
+    box-shadow: 0px 0px 4px 4px rgb(36, 130, 50);
+    transition: 0.15s;
+}
+
+.contactForm #subject {
+    width: 30%;
+    padding: 1%;
 }
 
 @media only screen and (max-width:1400px) {
@@ -858,6 +881,13 @@ input[type=submit]:disabled {
     /*addProduct.php*/
     .addProduct Button {
         width: 25%;
+    }
+    /*docu.php*/
+    .contactForm input[type=text] {
+        width: 40%;
+    }
+    .contactForm #subject {
+        width: 40%;
     }
 }
 
@@ -982,6 +1012,13 @@ input[type=submit]:disabled {
     /*addProduct.php*/
     .addProduct Button {
         width: 40%;
+    }
+    /*docu.php*/
+    .contactForm input[type=text] {
+        width: 50%;
+    }
+    .contactForm #subject {
+        width: 50%;
     }
 }
 
@@ -1112,5 +1149,12 @@ input[type=submit]:disabled {
     /*addProduct.php*/
     .addProduct Button {
         width: 60%;
+    }
+    /*docu.php*/
+    .contactForm input[type=text] {
+        width: 60%;
+    }
+    .contactForm #subject {
+        width: 70%;
     }
 }

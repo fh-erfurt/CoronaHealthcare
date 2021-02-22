@@ -47,10 +47,8 @@
         <br><br>
 
         <h3>2. Recherche</h3>
-        <p>
-
-            <a href="https://www.docmorris.de">www.docmorris.de</a>
-            <img src="assets/docMorris.jpg"></p>
+        <p><a href="https://www.docmorris.de">www.docmorris.de</a>
+        <img src="assets/docMorris.jpg"></p>
         <p><a href="https://www.shop-apotheke.com/">www.shop-apotheke.com/</a>
         <img src="assets/shop-apotheke.jpg"></p>
         <p><a href="https://www.medizinfuchs.de">https://www.medizinfuchs.de</a>
@@ -58,10 +56,31 @@
 
         <h3>3. Funktionalitäten</h3>
         <h3>4. Arbeitsaufteilung</h3>       
+        <p>
+            Aufbau und Design(HTML, CSS): Katja Fischer
+        </p>
+        <p>
+            php, Datenbank, Javascript und MVC-Struktur: Marvin Ruppert</p>
+        <p>
+            Textinhalte: Fabian Seeber</p>
+        <p>
+            Dokumentation: Alle
+        </p>
+
         <h3>5. Webseitenstruktur</h3>
         <h3>6. Datenbankstruktur</h3>
+        <p>
+            Zum Entwickeln der Datenbank wurde auf MySQL Workbench zurückgegriffen. Primär wird die Datenbank benötigt um das Shopsystem
+            abzubilden. Außerdem bildet sie die Grundlage für das Registrieren und Anmelden der Benutzer. Eine Besonderheit ist die Mappingtabelle
+            zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen bzw. Produkte
+            in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert: 
+        </p>
+        <img src="assets/datenbankmodell.jpg">
         <h3>7. Ordnerstruktur</h3>
+        <p>
 
+        </p>
+        <img src="assets/Ordnerstruktur.png">
 
     </div>
 

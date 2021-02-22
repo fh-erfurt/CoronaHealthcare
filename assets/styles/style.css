@@ -745,6 +745,43 @@ input[type=submit]:disabled {
 
 /*docu.php*/
 
+.docu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.docu p,
+.docu li {
+    text-align: left;
+    font-size: 20px;
+}
+
+.functionalities,
+.work-distribution {
+    text-align: center;
+}
+
+.functionalities li,
+.work-distribution li {
+    padding-bottom: 2%;
+}
+
+.docu h3 {
+    font-size: 22px;
+}
+
+.table-of-contents li {
+    padding-bottom: 3%;
+}
+
 .contactForm input[type=text] {
     padding: 20px;
     margin: 5px 0 22px 0;
@@ -763,6 +800,33 @@ input[type=submit]:disabled {
 .contactForm #subject {
     width: 30%;
     padding: 1%;
+}
+
+.research {
+    display: flex;
+    flex-direction: row;
+}
+
+.research img {
+    width: 98%;
+}
+
+.project-history {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-member {
+    border: solid black 2px;
+}
+
+.project-member li {
+    font-size: 15px;
+}
+
+.file-structure img {
+    width: 20%;
+    padding-right: 2%;
 }
 
 @media only screen and (max-width:1400px) {

@@ -37,10 +37,6 @@ a {
     font-size: 20px;
 }
 
-.rowHistory {
-    float: left;
-}
-
 .rowHistory p {
     float: right;
     padding-left: 2%;
@@ -143,6 +139,7 @@ a {
 
 .symbol a {
     font-size: 30px;
+    color: white;
 }
 
 footer p,
@@ -395,6 +392,8 @@ footer {
     margin: 15px;
     color: rgb(189, 0, 0);
     font-size: 17px;
+    border: 1px dotted red;
+    padding: 15px;
 }
 
 .data {
@@ -799,6 +798,9 @@ input[type=submit]:disabled {
         height: 320px;
         width: 400px;
     }
+    .history {
+        margin-bottom: 400px;
+    }
     /*product.php*/
     .product img {
         width: 275px;
@@ -920,6 +922,9 @@ input[type=submit]:disabled {
         margin-right: 10%;
         height: 240px;
         width: 300px;
+    }
+    .history {
+        margin-bottom: 450px;
     }
     /*product.php*/
     .product img {

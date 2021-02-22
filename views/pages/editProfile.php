@@ -8,7 +8,7 @@
 <?php else : ?>
     <div class="form-wrapper">
         <?php if(isset($errors) && count($errors) > 0) : ?>
-            <div class="error-message" style="border: 1px dotted red; padding: 15px;">
+            <div class="error-message">
                 
                     <?php foreach($errors as $key => $value) : ?>
                         <p><?=$value?></p>

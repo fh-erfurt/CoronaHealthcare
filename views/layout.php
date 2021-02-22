@@ -2,7 +2,7 @@
 
 <head>
 	<title>CoronaHealthcare</title>
-	<script src="https://kit.fontawesome.com/7627145794.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
 	<?php if (isset($css) && is_array($css)) : ?>
 		<?php foreach ($css as $index => $file) : ?>
@@ -41,7 +41,7 @@
 			<a href="index.php?c=pages&a=profile"><i class="fa fa-user"></i></a>
 			<? endif; ?>
 			<a href="index.php?c=shop&a=shoppingcart"><i class="fa fa-shopping-cart"> </i></a>
-			<a> <i title="Produkte im Warenkorb" style="color:white;"><?= isset($_SESSION['shoppingcart']) ? count($_SESSION['shoppingcart']) : '0' ?></i></a>
+			<a> <i title="Produkte im Warenkorb"><?= isset($_SESSION['shoppingcart']) ? count($_SESSION['shoppingcart']) : '0' ?></i></a>
 		</div>
 </header>
 

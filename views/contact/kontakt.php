@@ -5,9 +5,11 @@
                     <?php endforeach; ?>
                 
             </div>
+            
         <?php endif; ?>
+
 <form action="<?=$_SERVER['PHP_SELF'].'?c=contact&a=kontakt';?>" method="post">
-    <div class="loginForm">
+    <div class="contactForm">
     <h2>Kontakt</h2>
     <input type="text" name="email" id="email" placeholder="Ihre Emailadresse..." value="<?=$_POST['email'] ?? ''?>">
     <br>

@@ -74,9 +74,8 @@
 		</main>
 	</div>
 	<footer>
-		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a>
-			 || <a href="index.php?a=impressum"> Impressum </a> || <a href="index.php?c=contact&a=kontakt"> Kontakt</a></p>
-		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a> || <a href="index.php?a=documentation"> Dokumentation</a></p>
+		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a> 
+				|| <a href="index.php?a=impressum"> Impressum</a> || <a href="index.php?c=contact&a=kontakt"> Kontakt </a>|| <a href="index.php?a=documentation"> Dokumentation</a></p>
 	</footer>
 </body>
 

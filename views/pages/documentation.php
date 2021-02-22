@@ -55,6 +55,23 @@
         <img src="assets/medizinfuchs.jpg"></p>
 
         <h3>3. Funktionalitäten</h3>
+        <ul>
+            <li>Session- und Cookiemanagement</li>
+            <li>Shopsystem mit Warenkorb und Bestellvorgang</li>
+            <li>Filterung und Kategorisierung der Produkte</li>
+            <li>Anmeldung mit 'angemeldet bleiben' Funktionalität</li>
+            <li>Abmeldung</li>
+            <li>Registrierung</li>
+            <li>Profilübersicht einsehen</li>
+            <li>Profildaten bearbeiten</li>
+            <li>Bestellverlauf einsehen</li>
+            <li>Kontaktaufnahme per Kontaktformular</li>
+            <li>Darstellung von Informationen über Projektgruppe und Projektinhalt</li>
+            <li>Darstellung aktueller Informationen des RKI per eingebundenem RSS-Feed</li>
+            <li>Responsives Design</li>
+            <li>Formularvalidierung serverseitig per php und clientseitig mit Javascript</li>
+            <li>Sprechende Fehlermeldungen und Errorhandling</li>
+        </ul>
         <h3>4. Arbeitsaufteilung</h3>       
         <p>
             Aufbau und Design(HTML, CSS): Katja Fischer
@@ -97,6 +114,15 @@
         <img src="assets/OrdnerstrukturVS.png" >
         <img src="assets/OrdnerstrukturViews.png" >
 
+        <h3>Verwendete Software</h3>
+        <ul>
+            <li>Entwicklungsumgebung: Visual Studio Code</li>
+            <li>Versionskontrolle: GitHub (GitHub Desktop)</li>
+            <li>Datenbankmodellentwurf: MySql Workbench</li>
+            <li>Kommunikation: Discord, Whatsapp</li>
+            <li>XAMPP (Apache, Mysql)</li>
+            <li>Browser: Chrome (Marvin), Firefox (Katja), Edge (Katja)</li>
+        </ul>
     </div>
 
     </div>

@@ -61,9 +61,6 @@
                 <p>    <?= $products[$key]['price']; ?> € </p>
                 <button>Zum Warenkorb hinzufügen</button>
                 </form>
-
-                
-                    <!-- Beschreibung: <?= $products[$key]['description']; ?> <br> --></a>
                 </div>
             </div>
 <?php endforeach; ?>

@@ -190,6 +190,7 @@ class PagesController extends \app\core\Controller
         $this->setParam('success', $success);
 	}
 
+
 	public function actionError404()
 	{
 		

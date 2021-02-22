@@ -29,7 +29,6 @@ $controllerName = $_GET['c'] ?? 'pages';
 // check action name is given? if not use 'index' as default!
 $actionName = $_GET['a'] ?? 'start';
 
-
 if($actionName === 'logout')
 {
 	logOut();
@@ -56,7 +55,6 @@ if(file_exists($controllerPath))
 
 	// example of included controller name is PagesController in default
 	$controllerClassName = '\\app\\controller\\'.ucfirst($controllerName).'Controller';
-
 	// is the class name a valid name in our context?
 	if(class_exists($controllerClassName))
 	{

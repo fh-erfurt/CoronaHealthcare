@@ -13,4 +13,12 @@
         setcookie('userId', $id, $duration, '/');
         setcookie('password', $password, $duration, '/');
     }
+
+
+    function getProductname($productID)
+    {
+        $product = \app\models\Product::find('id= '. $productID);
+        $productName = $product[0]['name'];
+        return $productName;
+    }
 ?>

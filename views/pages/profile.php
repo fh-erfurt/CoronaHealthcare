@@ -40,7 +40,7 @@
                     <p>Bestellte Produkte:</p>
 
                     <p>  <?php foreach ($order['mappings'] as $key => $orderProduct) : ?>
-                            - Produktnummer: <?= $orderProduct['product_id'] ?> <br>
+                            - Produktnummer: <?= getProductname($orderProduct['product_id']) ?> <br>
                         <?php endforeach; ?></p>
                 </div></div>
             <?php endforeach; ?>

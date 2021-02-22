@@ -18,17 +18,15 @@
         <li>2. Recherche</li>
         <li>3. Funktionalitäten</li>
         <li>4. Arbeitsaufteilung/Verlauf</li>
-        <li>5. Webseitenstruktur</li>
-        <li>6. Datenbankstruktur</li>
-        <li>7. Ordnerstruktur</li></div>
+        <li>5. Projektverlauf</li>
+        <li>6. Webseitenstruktur</li>
+        <li>7. Datenbankstruktur</li>
+        <li>8. Ordnerstruktur</li></div>
 
         <h3>1. Projektbeschreibung</h3>
         <p>
-        CoronaHealthcare ist ein Unternehmen, das es sich zur Aufgabe gemacht hat, die Menschen so gut es geht bei der 
-        Bewältigung der Pandemie zu unterstützen. Durch jahrelange Erfahrungen im Bereich der Gesundheitsprävention, kann 
-        das Unternehmen bereits seit Anbeginn und Auftreten des Virus von den vorhandenen Fähigkeiten profitieren und an seine
-        Kunden weitergeben. Egal ob Vertrieb, oder eigene Herstellung von Gesundheitsprodukten, CoronaHealthcare bietet alles, 
-        was nötig ist, um die größtmögliche Sicherheit gewährleisten zu können.
+        Corona Healthcare ist... 
+
     </p>
     <p>
         Die anhaltende Pandemie und die damit einhergehenden Einschränkungen und Maßnahmen haben uns zur Erstellung dieser Seite bewogen.
@@ -64,9 +62,85 @@
         <p>
             Textinhalte: Fabian Seeber</p>
         <p>
-            Dokumentation: Alle
+            Dokumentation und Präsentation: Alle
         </p>
 
+        <h3>5. Projektverlauf</h3>
+        <tr class="project-history">
+            <h3>Marvin Ruppert</h3>
+        <td>
+      <ul>
+        <li>22.02.2021 Dokumentation bearbeitet</li>
+        <li>22.02.2021 Kontaktformular hinzugefügt</li>
+        <li>22.02.2021 Produktname im Bestellverlauf, Bild im Warenkorb</li>
+        <li>18.02.2021 Buttons überarbeitet, Bestellung erweitert, Profildaten bearbeitet, Passwort ändern erstellt</li>
+        <li>13.02.2021 Formularfeldüberprüfung per Javascript, RKI RSS Feed eingebunden, RememberMe Cookie gesetzt</li>
+        <li>12.02.2021 Registrierungsformular durch Javascript erweitert</li>
+        <li>10.02.2021 Bestellverlauf hinzugefügt, Warenkorbzähler geändert</li>
+        <li>09.02.2021 Orderby Find hinzugefügt, Kategoriefilter angepasst, Bilderklasse hinzugefügt</li>
+        <li>09.02.2021 Preisfilterung, Namensfilterung, Kategoriefilterung hinzugefügt, Warenkorbcounter hinzugefügt </li>
+        <li>09.02.2021 Warenkorb und Bestellvorgang angelegt, Datenbank Logiken vervollständigt</li>
+        <li>09.02.2021 Funktion zum Warenkorb hinzufügen eingebaut</li>
+        <li>09.02.2021 Produkte um Bilder erweitert, Produktansicht hinzugefügt</li>
+        <li>08.02.2021 Shop eingefügt, Filterungen für Shop eingefügt
+        <li>19.01.2021 Registrierung eingefügt</li>
+        <li>18.01.2021 Login eingebaut</li>
+        <li>15.01.2021 Actions und Pages angelegt</li>
+        <li>08.01.2021 Erste Datenbank Abfrage</li>
+        <li>21.12.2020 MVC Grundstruktur eingefügt</li>
+        <li>20.12.2020 style.css angelegt, Impressum getestet</li>
+        <li>20.12.2020 Datenbank Grundlagen </li>
+        <li>19.12.2020 Vorlage mit Ordnereinteilung</li>
+        </ul>
+        </td>
+        
+        
+        <h3>Fabian Seeber</h3>
+    <td>
+    <ul>
+    <li></li>
+    <li>22.02.2021 Dokumentation begonnen</li>
+    <li>20.02.2021 Bildgrößen geändert</li>
+    <li>18.02.2021 Informationstext geändert</li>
+    <li>16.02.2021 Informationstext hinzugefügt</li>
+    <li>12.02.2021 Produktbilder und Testdaten hinzugefügt</li>
+    <li>09.02.2021 Bilder hinzugefügt, Abstand für Texte eingefügt
+    <li>15.01.2021 Bilder hinzugefügt, help und Impressum geschrieben</li>
+    <li>19.12.2020 Impressum geschrieben</li>
+    </ul>
+    </td>
+
+    <h3>Katja Fischer</h3>
+    <td>
+    <ul>
+    <li>22.02.2021 Dokumentation bearbeitet</li>
+    <li>22.02.2021 Kontaktformular Style angepasst</li>
+    <li>22.02.2021 Navigation geändert</li>
+    <li>22.02.2021 Symbole geändert, about responsive, alle style-elemente in style verschoben
+    <li>21.02.2021 shop und shoppingcart style geändert und responsive
+    <li>21.02.2021 information, profile, success und order style geändert und responsive</li>
+    <li>20.02.2021 Login und Registrierung responsive</li>
+    <li>20.02.2021 About, Information und Produktansicht responsive</li>
+    <li>16.02.2021 shopseite, shoppingcart und addProduct Style geändert</li>
+    <li>15.02.2021 Startseite responsive</li>
+    <li>13.02.2021 RSS Feed angepasst und header, shopseite und login Style geändert  </li>
+    <li>13.02.2021 Impressum, help und about angepasst, style bearbeitet</li>
+    <li>12.02.2021 Icons geändert, Header angepasst, einige Änderungen gelöscht</li>
+    <li>09.02.2021 Navigation und Shopseite gestaltet, Anmeldung/Registrierung aufgeteilt, Footer angepasst    
+    <li>08.02.2021 Shopseite angepasst, Sidebar für Filterung erstellt, Style Shopseite geändert </li>
+    <li>21.01.2021 Style Registrierung und Login erstellt</li>
+    <li>15.01.2021 Bilder gelöscht, Texte eingerückt</li>
+    <li>14.01.2021 Logo geändert, Symbole und Suchleiste in Navigation eingefügt </li>
+    <li>13.01.2021 Buttons von Navigation geändert</li>
+    <li>08.01.2021 Style von Shop und Layout</li>    
+    <li>07.01.2021 Style von Start und Impressum erstellt</li>
+    <li>20.12.2020 Logo erstellt, Impressum geändert, Startseite erstellt </li>
+    </ul>
+    </td>
+
+</tr>
+
+                                    
         <h3>5. Webseitenstruktur</h3>
         <h3>6. Datenbankstruktur</h3>
         <p>

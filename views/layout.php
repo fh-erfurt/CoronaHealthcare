@@ -48,9 +48,8 @@
 <nav>
 
 	<div class="dropdown">
-		<button class="dropbtn"><a href="index.php?c=shop&a=shop">Shop</a>
-			<i class="fa fa-caret-down"></i>
-		</button>
+	<form action="index.php?c=shop&a=shop" method="post">
+        <button type="submitButton" class="dropbtn"> Shop <i class="fa fa-caret-down"></i></button>
 		<div class="dropdown-content">
 			<a href="index.php?c=shop&a=shop&categoryId=1">Schutzmasken</a>
 			<a href="index.php?c=shop&a=shop&categoryId=2">Desinfektionsmittel</a>
@@ -58,9 +57,13 @@
 			<a href="index.php?c=shop&a=shop&categoryId=4">Reinigungsmittel</a>
 			<a href="index.php?c=shop&a=shop&categoryId=5">Hautreinigung</a>
 		</div>
+    </form></div>
+		</button>
 	</div>
-	<button class="buttonInformation"><a href="index.php?a=information">Information</a></button>
-	<button class="buttonUeberUns"><a href="index.php?c=pages&a=about">Über uns</a></button>
+	<form action="index.php?a=information" method="post">
+	<button class="buttonInformation">Information</button></form>
+	<form action="index.php?c=pages&a=about" method="post">
+	<button class="buttonUeberUns">Über uns</button></form>
 </nav>
 
 
@@ -73,6 +76,7 @@
 	<footer>
 		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a>
 			 || <a href="index.php?a=impressum"> Impressum </a> || <a href="index.php?c=contact&a=kontakt"> Kontakt</a></p>
+		<p>&copy; <a href="index.php?a=start">Team CoronaHealthcare</a> || <a href="index.php?a=help"> FAQ </a> || <a href="index.php?a=impressum"> Impressum</a> || <a href="index.php?a=documentation"> Dokumentation</a></p>
 	</footer>
 </body>
 

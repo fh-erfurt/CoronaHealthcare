@@ -180,6 +180,7 @@ nav {
 .dropbtn,
 .buttonInformation,
 .buttonUeberUns {
+    color: white;
     padding: 10px;
     font-size: 25px;
     background-color: rgb(36, 130, 50);
@@ -498,6 +499,8 @@ input[type=submit]:disabled {
 }
 
 .itemList img {
+    padding-top: 1%;
+    padding-bottom: 1%;
     height: 200px;
     width: 200px;
     float: left;
@@ -721,6 +724,22 @@ input[type=submit]:disabled {
 
 .order button[type=submit]:hover {
     background: rgb(44, 47, 51);
+}
+
+
+/*doku.php*/
+
+.docu {}
+
+.docu a {
+    color: black;
+}
+
+.table-of-contents {}
+
+.docu img {
+    width: 75%;
+    padding-bottom: 2%;
 }
 
 @media only screen and (max-width:1400px) {

@@ -78,9 +78,24 @@
         <img src="assets/datenbankmodell.jpg">
         <h3>7. Ordnerstruktur</h3>
         <p>
-
+            Die Ordnerstruktur wird vor Allem durch das MVC Modell bestimmt. Daher befinden sich der Großteil der Projektdateien in den Ordnern
+            'Models', 'Views', und 'Controller'. Der Modelsordner beinhaltet alle Dateien, welche die Datenbankstruktur abbilden und sind daher auch Grundlage
+            für Datenbankzugriffe. In dem Viewsordner befinden sich alle Ansichten, die nötig sind um die Oberfläche des Projekts abzubilden. Dort werden Parameter
+            verwendet, welche in den Controllerdateien gesetzt werden. Diese finden sich alle in dem 'controller'-Ordner.
         </p>
-        <img src="assets/Ordnerstruktur.png">
+        <p>
+            Grundlage für die Model- und Controllerklassen befinden sich in dem 'core'-Verzeichnis. Dort werden die Elternklassen als Funktionssammlungen vorgegeben.
+        </p>
+        <p>
+            Der src Ordner beinhaltet alles was zum Erzeugen der Datenbank notwendig ist. Dazu zählen Datenbankmodell , Datenbankerstellungsskript (coronahealthcare.sql)
+            und ein Skript zum Erzeugen der Testdaten (Testdaten.sql). 
+        </p>
+        <p>
+            Alle Design- und Inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
+            Der CSS Code befindet sich speziell im dafür angelegten 'styles'-Verzeichnis.
+        </p>
+        <img src="assets/OrdnerstrukturVS.png" >
+        <img src="assets/OrdnerstrukturViews.png" >
 
     </div>
 

@@ -24,9 +24,26 @@
 
         <h3>1. Projektbeschreibung</h3>
         <p>
-            CoronaHealthcare ist eine Informations-und Shopseite usw..
-
-        </p>
+        CoronaHealthcare ist ein Unternehmen, das es sich zur Aufgabe gemacht hat, die Menschen so gut es geht bei der 
+        Bewältigung der Pandemie zu unterstützen. Durch jahrelange Erfahrungen im Bereich der Gesundheitsprävention, kann 
+        das Unternehmen bereits seit Anbeginn und Auftreten des Virus von den vorhandenen Fähigkeiten profitieren und an seine
+        Kunden weitergeben. Egal ob Vertrieb, oder eigene Herstellung von Gesundheitsprodukten, CoronaHealthcare bietet alles, 
+        was nötig ist, um die größtmögliche Sicherheit gewährleisten zu können.
+    </p>
+    <p>
+        Die anhaltende Pandemie und die damit einhergehenden Einschränkungen und Maßnahmen haben uns zur Erstellung dieser Seite bewogen.
+        Gerade in der aktuellen Zeit ist es besonders wichtig, dass Informationen weitergebeben werden und die Möglichkeit besteht,
+        die geltenden Maßnahmen und Präventionen einhalten zu können. 
+    </p>
+    <p>
+        Neben der Weitergabe und Zentralisierung von Informationen, über die Pandemie und das Virus, besteht für all unsere Kunden 
+        die Möglichkeit Produkte über unseren Shop zu beziehen. Hier ist uns besonders ein breit gefächertes
+        Produktportfolio wichtig.
+    </p>
+    <p>
+        Die Zielgruppe sind sowohl private Haushalte, als auch Unternehmen jeglicher Größe. Wir bieten jedem Kunden uneingeschränkten
+        Zugang zu unserem Shop und liefern aktuelle Informationen über unseren RSS Feed.
+    </p>
         <br><br>
 
         <h3>2. Recherche</h3>
@@ -36,7 +53,7 @@
             <img src="assets/docMorris.jpg"></p>
         <p><a href="https://www.shop-apotheke.com/">www.shop-apotheke.com/</a>
         <img src="assets/shop-apotheke.jpg"></p>
-        <p><a href="https://www.medizinfuchs.de">https://www.conrad.de</a>
+        <p><a href="https://www.medizinfuchs.de">https://www.medizinfuchs.de</a>
         <img src="assets/medizinfuchs.jpg"></p>
 
         <h3>3. Funktionalitäten</h3>

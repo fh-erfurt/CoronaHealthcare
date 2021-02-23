@@ -31,7 +31,7 @@
         <p>
             Die Projektidee für Corona Healthcare entstand im Zuge der Modulaufgabe für „Grundlagen und Dynamische Webprogrammierung“ mit dem Thema:
             "Webseite mit Shop-System für einen realen oder fiktiven Kunden". Hier sollte eine übergreifende Projektaufgabe mit HTML, CSS, 
-            JavaScript und PHP realisiert werden. Anforderungen war neben der passenden optischen Anmutung und guten Bediebarkeit vor allem das Shopsystem.
+            JavaScript und PHP realisiert werden. Anforderungen war neben der passenden optischen Anmutung und guten Bedienbarkeit vor allem das Shopsystem.
 
         </p>
         <p>

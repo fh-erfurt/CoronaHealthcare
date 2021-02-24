@@ -729,20 +729,27 @@ input[type=submit]:disabled {
 
 /*docu.php*/
 
-.docu {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3%;
-    margin-right: 3%;
-}
+.docu {}
 
 .docu a {
     color: black;
 }
 
+.table-of-contents {}
+
 .docu img {
     width: 75%;
     padding-bottom: 2%;
+}
+
+
+/*docu.php*/
+
+.docu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 ul {

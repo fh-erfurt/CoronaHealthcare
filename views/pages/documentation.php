@@ -51,7 +51,16 @@
         <br><br>
 
         <h3>2. Recherche</h3>
-        <p>Text...</p>
+        <p>
+            Zur Anregung von Ideen fokussierten wir uns bei der Recherche nach alternativen Websites auf das Thema 'Medizin & und dessen Shopsystem'.
+            Gerade die Position des Logos, der Navigation und des Content-Bereiches waren für uns in der Anordnung wichtig. Die Recherche für das
+            Thema 'Corona' war in der aktuellen Situation und Lage recht einfach, da die mediale Präsenz allgegenwärtig ist. Das Projektthema ist daher
+            aktuell und steht in großem öffentlichen Interesse. Neben der Recherche für Optik und Thema ergaben sich auch die Produkte für das Shopsystem 
+            und konnten eingepflegt werden. Durch die breitgefächerte Zielgruppe war es uns wichtig, dass wir kleine, aber auch große Mengen
+            unserer Produkte anbieten können.
+        
+        
+        </p>
         <div class="research">
 
             <p><a href="https://www.docmorris.de"><img src="assets/docMorris.jpg" alt=docmorris.de></a>
@@ -107,6 +116,7 @@
                 <h3>Marvin Ruppert</h3>
 
                 <ul>
+                    <li>23.02.2021 README.md erstellt, Datenbank und Testdaten vereint</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular hinzugefügt</li>
                     <li>22.02.2021 Produktname im Bestellverlauf, Bild im Warenkorb</li>
@@ -165,6 +175,7 @@
 
                 <ul>
                     <li></li>
+                    <li>24.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Dokumentation begonnen und weiter bearbeitet</li>
                     <li>20.02.2021 Bildgrößen geändert</li>
                     <li>18.02.2021 Informationstext geändert</li>
@@ -179,35 +190,40 @@
 
         </div>
         <div class="website-structure">
-        <h3>5. Webseitenstruktur</h3></div>
+        <h3>6. Webseitenstruktur</h3></div>
+        <p>
+            Text...
+
+        </p>
         <div class="database-structure">
-        <h3>6. Datenbankstruktur</h3>
+        <h3>7. Datenbankstruktur</h3>
         <p>
             Zum Entwickeln der Datenbank wurde auf MySQL Workbench zurückgegriffen. Primär wird die Datenbank benötigt um das Shopsystem
             abzubilden. Außerdem bildet sie die Grundlage für das Registrieren und Anmelden der Benutzer. Eine Besonderheit ist die Mappingtabelle
-            zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen bzw. Produkte
+            zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen, bzw. Produkte
             in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert:
         </p>
         <img src="assets/datenbankmodell.jpg">
         </div>
 
         <div class="file-structure">
-        <h3>7. Ordnerstruktur</h3>
+        <h3>8. Ordnerstruktur</h3>
         <p>
             Die Ordnerstruktur wird vor Allem durch das MVC Modell bestimmt. Daher befinden sich der Großteil der Projektdateien in den Ordnern
-            'Models', 'Views', und 'Controller'. Der Modelsordner beinhaltet alle Dateien, welche die Datenbankstruktur abbilden und sind daher auch Grundlage
-            für Datenbankzugriffe. In dem Viewsordner befinden sich alle Ansichten, die nötig sind um die Oberfläche des Projekts abzubilden. Dort werden Parameter
-            verwendet, welche in den Controllerdateien gesetzt werden. Diese finden sich alle in dem 'controller'-Ordner.
+            'models', 'views', und 'controller'. Der Ordner 'models' beinhaltet alle Dateien, welche die Datenbankstruktur abbilden. Diese sind daher auch Grundlage
+            für Datenbankzugriffe. In dem Ordner 'views' befinden sich alle Ansichten, die nötig sind um die Oberfläche des Projekts abzubilden. 
+            In diesen werden Parameter verwendet, welche in den Dateiinhalten des Ordners 'controller' vordefiniert werden.
+
         </p>
         <p>
             Grundlage für die Model- und Controllerklassen befinden sich in dem 'core'-Verzeichnis. Dort werden die Elternklassen als Funktionssammlungen vorgegeben.
         </p>
         <p>
-            Der src Ordner beinhaltet alles was zum Erzeugen der Datenbank notwendig ist. Dazu zählen Datenbankmodell , Datenbankerstellungsskript (coronahealthcare.sql)
-            und ein Skript zum Erzeugen der Testdaten (Testdaten.sql).
+            Der src Ordner beinhaltet alles was zum Erzeugen der Datenbank notwendig ist. Dazu zählt neben dem Datenbankmodell auch das Datenbankerstellungsskript 
+            (coronahealthcare.sql).
         </p>
         <p>
-            Alle Design- und Inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
+            Alle design- und inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
             Der CSS Code befindet sich speziell im dafür angelegten 'styles'-Verzeichnis.
         </p>
         <img src="assets/OrdnerstrukturVS.png">
@@ -219,7 +235,7 @@
         <ul>
             <li>Entwicklungsumgebung: Visual Studio Code</li>
             <li>Versionskontrolle: GitHub (GitHub Desktop)</li>
-            <li>Datenbankmodellentwurf: MySql Workbench</li>
+            <li>Datenbankmodellentwurf: MySQL Workbench</li>
             <li>Kommunikation: Discord, Whatsapp</li>
             <li>XAMPP (Apache, Mysql)</li>
             <li>Browser: Chrome (Marvin), Firefox (Katja), Edge (Katja)</li>

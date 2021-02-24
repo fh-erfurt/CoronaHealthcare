@@ -23,3 +23,6 @@ Passwort: 12345678
 Username2: Maxmustermann@gmx.de
 Passwort: 12345678
 
+
+Das Repository findet man unter folgendem Link: https://github.com/fh-erfurt/CoronaHealthcare
+

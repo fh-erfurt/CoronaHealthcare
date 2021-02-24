@@ -242,7 +242,7 @@
                 zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen, bzw. Produkte
                 in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert:
             </p>
-            <img src="assets/datenbankmodell.jpg">
+            <img src="assets/Dokumentation/datenbankmodell.jpg">
         </div>
 
         <div class="file-structure">

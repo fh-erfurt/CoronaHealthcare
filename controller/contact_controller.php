@@ -21,10 +21,6 @@ class ContactController extends \app\core\Controller
 			$lastname = isset($_POST['lastname']) ? $_POST['lastname'] : '';
 			$subject = isset($_POST['subject']) ? $_POST['subject'] : '';
             
-            print_r($userEmail . '<br>');
-            print_r($firstname. '<br>');
-            print_r($lastname. '<br>');
-            print_r($subject. '<br>');
 
             if($userEmail === null || mb_strlen($userEmail) < 2)
             {

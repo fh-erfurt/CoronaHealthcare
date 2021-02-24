@@ -109,7 +109,7 @@
             <div class="project-member">
                 <h3>Marvin Ruppert</h3>
                 <ul>
-                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
+                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
                     <li>23.02.2021 README.md erstellt, Datenbank und Testdaten vereint</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular hinzugefügt</li>
@@ -139,7 +139,7 @@
                 <h3>Katja Fischer</h3>
 
                 <ul>
-                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
+                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular Style angepasst</li>
                     <li>22.02.2021 Navigation geändert</li>

@@ -169,7 +169,7 @@
 
                 <ul>
                     <li></li>
-                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
+                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
                     <li>22.02.2021 Dokumentation begonnen und weiter bearbeitet</li>
                     <li>20.02.2021 Bildgrößen geändert</li>
                     <li>18.02.2021 Informationstext geändert</li>

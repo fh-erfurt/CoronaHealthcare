@@ -57,13 +57,13 @@
         </p>
         <div class="research">
 
-            <p><a href="https://www.docmorris.de"><img src="assets/docMorris.jpg" alt=docmorris.de></a>
+            <p><a href="https://www.docmorris.de"><img src="assets/Dokumentation/docMorris.jpg" alt=docmorris.de></a>
 
             </p>
-            <p><a href="https://www.shop-apotheke.com/"><img src="assets/shop-apotheke.jpg" alt=shop-apotheke.com></a>
+            <p><a href="https://www.shop-apotheke.com/"><img src="assets/Dokumentation/shop-apotheke.jpg" alt=shop-apotheke.com></a>
 
             </p>
-            <p><a href="https://www.medizinfuchs.de"><img src="assets/medizinfuchs.jpg" alt=medizinfuchs.de></a>
+            <p><a href="https://www.medizinfuchs.de"><img src="assets/Dokumentation/medizinfuchs.jpg" alt=medizinfuchs.de></a>
 
             </p>
         </div>
@@ -265,8 +265,8 @@
                 Alle design- und inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
                 Der CSS Code befindet sich speziell im dafür angelegten 'styles'-Verzeichnis.
             </p>
-            <img src="assets/OrdnerstrukturVS.png">
-            <img src="assets/OrdnerstrukturViews.png">
+            <img src="assets/Dokumentation/OrdnerstrukturVS.png">
+            <img src="assets/Dokumentation/OrdnerstrukturViews.png">
         </div>
 
         <div class="software-used">

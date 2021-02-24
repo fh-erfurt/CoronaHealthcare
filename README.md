@@ -13,7 +13,7 @@ Nachdem das Datenbankskript ausgeführt wurde, können die Anwendungsdateien auf
 Apache Servers hinterlegt werden. In der Konfiguration des Apache Servers muss darauf geachtet werden, dass in der php.ini short_open_tag=On gesetzt ist.
 Sobald dies erfolgt ist, kann die Anwendung genutzt werden.
 
-Zum Benutzen der Shopfunktionen muss sich noch registriert, oder aber einer der bereits
+Zum Benutzen der Shopfunktionen muss sich registriert, oder aber einer der bereits
 angelegten Testzugänge genutzt werden. 
 Diese finden sich hier:
 

@@ -829,6 +829,26 @@ ul {
     padding-right: 2%;
 }
 
+.website-design {
+    display: flex;
+    flex-direction: row;
+}
+
+.website-design img {
+    width: 33%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.website-structure p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.website-structure ul ul li {
+    list-style-type: disc;
+}
+
 @media only screen and (max-width:1400px) {
     /*shop.php*/
     .columnShop {
@@ -952,6 +972,13 @@ ul {
     }
     .contactForm #subject {
         width: 40%;
+    }
+    /*docu.php*/
+    .project-history {
+        flex-direction: column;
+    }
+    .research {
+        flex-direction: column;
     }
 }
 
@@ -1083,6 +1110,10 @@ ul {
     }
     .contactForm #subject {
         width: 50%;
+    }
+    .docu p,
+    .docu li {
+        font-size: 15px;
     }
 }
 

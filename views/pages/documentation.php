@@ -20,33 +20,29 @@
                 <li>3. Funktionalitäten</li>
                 <li>4. Arbeitsaufteilung/Verlauf</li>
                 <li>5. Projektverlauf</li>
-                <li>6. Webseitenstruktur</li>
-                <li>7. Datenbankstruktur</li>
-                <li>8. Ordnerstruktur</li>
+                <li>6. Entwurf Website</li>
+                <li>7. Webseitenstruktur</li>
+                <li>8. Datenbankstruktur</li>
+                <li>9. Ordnerstruktur</li>
+                <li>10.Verwendete Software</li>
             </ul>
         </div>
-
 
         <h3>1. Projektbeschreibung</h3>
         <p>
             Die Projektidee für Corona Healthcare entstand im Zuge der Modulaufgabe für „Grundlagen und Dynamische Webprogrammierung“ mit dem Thema:
-            "Webseite mit Shop-System für einen realen oder fiktiven Kunden". Hier sollte eine übergreifende Projektaufgabe mit HTML, CSS, 
-            JavaScript und PHP realisiert werden. Anforderungen war neben der passenden optischen Anmutung und guten Bedienbarkeit vor allem das Shopsystem.
+            "Webseite mit Shop-System für einen realen oder fiktiven Kunden". Hier sollte eine übergreifende Projektaufgabe mit HTML, CSS,
+            PHP und JavaScript realisiert werden. Anforderungen war neben der passenden optischen Anmutung und guten Bediebarkeit vor allem das Shopsystem.
 
-        </p>
-        <p>
             Die anhaltende Pandemie und die damit einhergehenden Einschränkungen und Maßnahmen haben uns zur Erstellung dieser Seite bewogen.
-            Gerade in der aktuellen Zeit ist es besonders wichtig, dass Informationen weitergebeben werden und die Möglichkeit besteht,
-            die geltenden Maßnahmen und Präventionen einhalten zu können.
-        </p>
-        <p>
-            Neben der Weitergabe und Zentralisierung von Informationen, über die Pandemie und das Virus, besteht für all unsere Kunden
-            die Möglichkeit Produkte über unseren Shop zu beziehen. Hier ist uns besonders ein breit gefächertes
-            Produktportfolio wichtig.
-        </p>
-        <p>
-            Die Zielgruppe sind sowohl private Haushalte, als auch Unternehmen jeglicher Größe. Wir bieten jedem Kunden uneingeschränkten
-            Zugang zu unserem Shop und liefern aktuelle Informationen über unseren RSS Feed.
+
+            Die Zielgruppe sind sowohl private Haushalte, als auch Unternehmen jeglicher Größe.
+
+            Jeder Benutzer kann Produkte zu seinem Warenkorb hinzufügen und nach dem Login können die Produkte bestellt werden.
+            Im Profil ist ein Bestellverlauf zu sehen und eine Profilübersicht, unter der das Profil und Passwort verändert werden kann.
+            Unter Information und auf der Startseite findet der Nutzer Informationen zum Corona Virus.
+
+
         </p>
         <br><br>
 
@@ -55,11 +51,9 @@
             Zur Anregung von Ideen fokussierten wir uns bei der Recherche nach alternativen Websites auf das Thema 'Medizin & und dessen Shopsystem'.
             Gerade die Position des Logos, der Navigation und des Content-Bereiches waren für uns in der Anordnung wichtig. Die Recherche für das
             Thema 'Corona' war in der aktuellen Situation und Lage recht einfach, da die mediale Präsenz allgegenwärtig ist. Das Projektthema ist daher
-            aktuell und steht in großem öffentlichen Interesse. Neben der Recherche für Optik und Thema ergaben sich auch die Produkte für das Shopsystem 
+            aktuell und steht in großem öffentlichen Interesse. Neben der Recherche für Optik und Thema ergaben sich auch die Produkte für das Shopsystem
             und konnten eingepflegt werden. Durch die breitgefächerte Zielgruppe war es uns wichtig, dass wir kleine, aber auch große Mengen
             unserer Produkte anbieten können.
-        
-        
         </p>
         <div class="research">
 
@@ -106,7 +100,7 @@
 
                 <li> Textinhalte: Fabian Seeber</li>
 
-                <li> Dokumentation und Präsentation: Alle</li>
+                <li> Mockups, Dokumentation und Präsentation: Alle</li>
 
         </div>
 
@@ -114,8 +108,8 @@
         <div class="project-history">
             <div class="project-member">
                 <h3>Marvin Ruppert</h3>
-
                 <ul>
+                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
                     <li>23.02.2021 README.md erstellt, Datenbank und Testdaten vereint</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular hinzugefügt</li>
@@ -141,11 +135,11 @@
                 </ul>
             </div>
 
-           
             <div class="project-member">
                 <h3>Katja Fischer</h3>
 
                 <ul>
+                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular Style angepasst</li>
                     <li>22.02.2021 Navigation geändert</li>
@@ -175,7 +169,7 @@
 
                 <ul>
                     <li></li>
-                    <li>24.02.2021 Dokumentation bearbeitet</li>
+                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
                     <li>22.02.2021 Dokumentation begonnen und weiter bearbeitet</li>
                     <li>20.02.2021 Bildgrößen geändert</li>
                     <li>18.02.2021 Informationstext geändert</li>
@@ -186,60 +180,105 @@
                     <li>19.12.2020 Impressum geschrieben</li>
                 </ul>
             </div>
+        </div>
+
+        <h3>6. Entwurf Website</h3>
+        <div class="website-design">
+            <img src="assets/Dokumentation/Mockup_Start.jpg">
+            <img src="assets/Dokumentation/Mockup_Shop.jpg">
+            <img src="assets/Dokumentation/Mockup_Produkte.jpg">
+        </div>
+
+        <div class="website-structure">
+            <h3>7. Webseitenstruktur</h3>
+            <p>Navigation
+            <ul>
+                <li>Shop</li>
+                <ul>
+                    <li>Schutzmasken</li>
+                    <li>Desinfektionsmittel</li>
+                    <li>Hygienepapier</li>
+                    <li>Reinigungsmittel</li>
+                    <li>Hautreinigung</li>
+                </ul>
+
+                <li>Information</li>
+                <li>Über uns</li>
+            </ul>
+            </p>
+
+            <p>Shop
+            <ul>
+                <li>Shopseite</li>
+                <ul>
+                    <li>Produktansicht</li>
+                </ul>
+                <li>Produkt hinzugefügt</li>
+                <li>Warenkorb</li>
+                <ul>
+                    <li>Bestellvorgang</li>
+                    <li>Bestellbestätigung</li>
+                </ul>
+            </ul>
+            </p>
+            <p>Profil
+            <ul>
+                <li>Anmelden</li>
+                <li>Registrieren</li>
+                <li>Profilübersicht und Bestellverlauf</li>
+                <ul>
+                    <li>Profil bearbeiten</li>
+                    <li>Passwort ändern</li>
+                </ul>
+
 
 
         </div>
-        <div class="website-structure">
-        <h3>6. Webseitenstruktur</h3></div>
-        <p>
-            Text...
-
-        </p>
         <div class="database-structure">
-        <h3>7. Datenbankstruktur</h3>
-        <p>
-            Zum Entwickeln der Datenbank wurde auf MySQL Workbench zurückgegriffen. Primär wird die Datenbank benötigt um das Shopsystem
-            abzubilden. Außerdem bildet sie die Grundlage für das Registrieren und Anmelden der Benutzer. Eine Besonderheit ist die Mappingtabelle
-            zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen, bzw. Produkte
-            in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert:
-        </p>
-        <img src="assets/datenbankmodell.jpg">
+            <h3>8. Datenbankstruktur</h3>
+            <p>
+                Zum Entwickeln der Datenbank wurde auf MySQL Workbench zurückgegriffen. Primär wird die Datenbank benötigt um das Shopsystem
+                abzubilden. Außerdem bildet sie die Grundlage für das Registrieren und Anmelden der Benutzer. Eine Besonderheit ist die Mappingtabelle
+                zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen, bzw. Produkte
+                in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert:
+            </p>
+            <img src="assets/datenbankmodell.jpg">
         </div>
 
         <div class="file-structure">
-        <h3>8. Ordnerstruktur</h3>
-        <p>
-            Die Ordnerstruktur wird vor Allem durch das MVC Modell bestimmt. Daher befinden sich der Großteil der Projektdateien in den Ordnern
-            'models', 'views', und 'controller'. Der Ordner 'models' beinhaltet alle Dateien, welche die Datenbankstruktur abbilden. Diese sind daher auch Grundlage
-            für Datenbankzugriffe. In dem Ordner 'views' befinden sich alle Ansichten, die nötig sind um die Oberfläche des Projekts abzubilden. 
-            In diesen werden Parameter verwendet, welche in den Dateiinhalten des Ordners 'controller' vordefiniert werden.
+            <h3>9. Ordnerstruktur</h3>
+            <p>
+                Die Ordnerstruktur wird vor Allem durch das MVC Modell bestimmt. Daher befinden sich der Großteil der Projektdateien in den Ordnern
+                'models', 'views', und 'controller'. Der Ordner 'models' beinhaltet alle Dateien, welche die Datenbankstruktur abbilden. Diese sind daher auch Grundlage
+                für Datenbankzugriffe. In dem Ordner 'views' befinden sich alle Ansichten, die nötig sind um die Oberfläche des Projekts abzubilden.
+                In diesen werden Parameter verwendet, welche in den Dateiinhalten des Ordners 'controller' vordefiniert werden.
 
-        </p>
-        <p>
-            Grundlage für die Model- und Controllerklassen befinden sich in dem 'core'-Verzeichnis. Dort werden die Elternklassen als Funktionssammlungen vorgegeben.
-        </p>
-        <p>
-            Der src Ordner beinhaltet alles was zum Erzeugen der Datenbank notwendig ist. Dazu zählt neben dem Datenbankmodell auch das Datenbankerstellungsskript 
-            (coronahealthcare.sql).
-        </p>
-        <p>
-            Alle design- und inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
-            Der CSS Code befindet sich speziell im dafür angelegten 'styles'-Verzeichnis.
-        </p>
-        <img src="assets/OrdnerstrukturVS.png">
-        <img src="assets/OrdnerstrukturViews.png">
+            </p>
+            <p>
+                Grundlage für die Model- und Controllerklassen befinden sich in dem 'core'-Verzeichnis. Dort werden die Elternklassen als Funktionssammlungen vorgegeben.
+            </p>
+            <p>
+                Der src Ordner beinhaltet alles was zum Erzeugen der Datenbank notwendig ist. Dazu zählt neben dem Datenbankmodell auch das Datenbankerstellungsskript
+                (coronahealthcare.sql).
+            </p>
+            <p>
+                Alle design- und inhaltstechnischen Ressourcen befinden sich im 'assets'-Order. Bilder, CSS und vergangene Präsentationen sind darin gespeichert.
+                Der CSS Code befindet sich speziell im dafür angelegten 'styles'-Verzeichnis.
+            </p>
+            <img src="assets/OrdnerstrukturVS.png">
+            <img src="assets/OrdnerstrukturViews.png">
         </div>
 
         <div class="software-used">
-        <h3>Verwendete Software</h3>
-        <ul>
-            <li>Entwicklungsumgebung: Visual Studio Code</li>
-            <li>Versionskontrolle: GitHub (GitHub Desktop)</li>
-            <li>Datenbankmodellentwurf: MySQL Workbench</li>
-            <li>Kommunikation: Discord, Whatsapp</li>
-            <li>XAMPP (Apache, Mysql)</li>
-            <li>Browser: Chrome (Marvin), Firefox (Katja), Edge (Katja)</li>
-        </ul>
+            <h3>10. Verwendete Software</h3>
+            <ul>
+                <li>Entwicklungsumgebung: Visual Studio Code</li>
+                <li>Versionskontrolle: GitHub (GitHub Desktop)</li>
+                <li>Datenbankmodellentwurf: MySQL Workbench</li>
+                <li>Kommunikation: Discord, Whatsapp</li>
+                <li>XAMPP (Apache, Mysql)</li>
+                <li>Browser: Chrome (Marvin), Firefox (Katja), Edge (Katja)</li>
+            </ul>
         </div>
     </div>
 

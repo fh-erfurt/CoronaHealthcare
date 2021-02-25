@@ -109,12 +109,12 @@
             <div class="project-member">
                 <h3>Marvin Ruppert</h3>
                 <ul>
-                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
+                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
                     <li>23.02.2021 README.md erstellt, Datenbank und Testdaten vereint</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular hinzugefügt</li>
                     <li>22.02.2021 Produktname im Bestellverlauf, Bild im Warenkorb</li>
-                    <li>18.02.2021 Buttons überarbeitet, Bestellung erweitert, Profildaten bearbeitet, Passwort ändern erstellt</li>
+                    <li>18.02.2021 Buttons überarbeitet, Bestellung erweitert, Profildaten bearbeiten Funktion eingefügt, Passwort ändern erstellt</li>
                     <li>13.02.2021 Formularfeldüberprüfung per Javascript, RKI RSS Feed eingebunden, RememberMe Cookie gesetzt</li>
                     <li>12.02.2021 Registrierungsformular durch Javascript erweitert</li>
                     <li>10.02.2021 Bestellverlauf hinzugefügt, Warenkorbzähler geändert</li>
@@ -125,7 +125,7 @@
                     <li>09.02.2021 Produkte um Bilder erweitert, Produktansicht hinzugefügt</li>
                     <li>08.02.2021 Shop eingefügt, Filterungen für Shop eingefügt
                     <li>19.01.2021 Registrierung eingefügt</li>
-                    <li>18.01.2021 Login eingebaut</li>
+                    <li>18.01.2021 Login eingebaut, Produkte um Kategorien erweitert, Profilübersicht hinzugefügt</li>
                     <li>15.01.2021 Actions und Pages angelegt</li>
                     <li>08.01.2021 Erste Datenbank Abfrage</li>
                     <li>21.12.2020 MVC Grundstruktur eingefügt</li>
@@ -139,7 +139,7 @@
                 <h3>Katja Fischer</h3>
 
                 <ul>
-                    <li>24.02.2021 Dokumentation bearbeitet,Präsentation erstellt</li>
+                    <li>24.02.2021 Dokumentation bearbeitet, Präsentation erstellt</li>
                     <li>22.02.2021 Dokumentation bearbeitet</li>
                     <li>22.02.2021 Kontaktformular Style angepasst</li>
                     <li>22.02.2021 Navigation geändert</li>
@@ -242,7 +242,7 @@
                 zwischen den beiden Tabellen order und product. Diese wird benötigt, um eine Bestellung mit mehreren Produkten zu ermöglichen, bzw. Produkte
                 in mehreren Bestellungen beinhalten zu können, ohne Redundanzen zu erzeugen. Die Datenbank wurde wie nachfolgend realisiert:
             </p>
-            <img src="assets/datenbankmodell.jpg">
+            <img src="assets/Dokumentation/datenbankmodell.jpg">
         </div>
 
         <div class="file-structure">
